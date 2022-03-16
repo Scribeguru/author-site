@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: #f4fef8;
+  overflow-x: hidden;
+}
+
+.collapse {
+  padding: 0;
+}
+
+.fa-angle-down {
+  position: relative;
+  color: black;
+}
+
+.hi-there-container {
+  background-color: black;
+  color: #f4fef8;
+  padding-bottom: 8em;
+  animation: rollout 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.hi-there {
+  font-size: 4em;
+  margin-top: 30vh;
+  margin-left: 24vw;
+}
+
+.my-name-is-container {
+  background-color: black;
+  color: #f4fef8;
+  margin-right: 67.4vw;
+}
+
+.my-name-is {
+  display: inline-block;
+  position: relative;
+  color: black;
+  animation: fadein 3s ease-out;
+  animation-delay: 2.4s;
+}
+
+.my-name-is:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  animation: underline 1s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes underline{
+  0%{
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  100%{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.mitch {
+  animation: gradientfade 1.6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes gradientfade{
+  0%{
+    background: black;
+    background-clip: text;
+  }
+  100%{
+    background: linear-gradient(45deg, rgba(7,152,117,1) 38%, rgba(221,192,255,1) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.opening-msg {
+  background-color: black;
+  position: relative;
+  font-family: 'EB Garamond', serif;
+  font-size: 2.1em;
+  margin-bottom: 0.5em;
+  z-index: 2;
+}
+
+::selection {
+	color: #079875;
+}
+
+@media screen and (min-width: 320px) {
+	
+}
+
+@media screen and (min-width: 455px) {
+	
+}
+
+
+@media screen and (min-width: 1064px) {
+  @keyframes rollout{
+    0%{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100%{
+      clip-path: polygon(0 0, 100% 0, 100% 8%, 0% 145%);
+    }
+  }
+	.my-name-is {
+    position: absolute;
+    top: 41vh;
+    left: -13vw;
+    font-size: 4.75em;
+    margin-left: 55vw;
+  }
+}
+
+@media screen and (min-width: 1306px) {
+	.my-name-is {
+    position: absolute;
+    top: 42vh;
+    left: -2vw;
+    font-size: 4.75em;
+    margin-left: 55vw;
+  }
+  .my-name-is-container {
+    
+  }
+}
+
+/* Glitch Greeting Start */
+.hG {
+	animation: glitchGreet 1s linear;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+.iG {
+	animation: glitchGreet 1s linear;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
+}
+.tG {
+  animation: glitchGreet .5s ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: backwards;
+}
+.hGtwo {
+  animation: glitchGreet 1.3s linear;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+}
+.eG {
+  animation: glitchGreet 1.3s linear;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+}
+.rG {
+  animation: glitchGreet 0.5s ease-in;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+.eGtwo {
+  animation: glitchGreet 0.5s ease-in;
+  animation-fill-mode: backwards;
+}
+.bangG {
+  animation: glitchGreet 1.5s linear;
+  animation-delay: 1.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes glitchGreet{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 0.6;
+  }
+  19%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0.9;
+  }
+  47%{
+    opacity: 0;
+  }
+  55%{
+    opacity: 1;
+  }
+  77%{
+    opacity: 0.5;
+  }
+  86%{
+    opacity: 0.8;
+  }
+  96%{
+    opacity: 0;
+  }
+  98%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Glitch Greeting End */
+
+/* Bouncing Arrow Start */
+.downArrow{
+  margin-top: 7vh;
+  margin-left: 14vw;
+	bottom: 30%;
+	left: 50%;
+  z-index: -1;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite, drop 8s;
+}
+
+@keyframes drop{
+  0%, 90%{
+    transform: translateY(-1000px)
+  }
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(-10);
+    -ms-transform: translateY(-10);
+    -webkit-transform: translateY(-10);
+    transform: translateY(-10);
+  }
+  40% {
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  60% {
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+/* Bouncing Arrow End */
