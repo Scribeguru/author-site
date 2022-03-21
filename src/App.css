@@ -28,13 +28,11 @@ body {
   font-family: 'Satisfy', cursive;
 }
 
-.my-name-is-container {
-  background-color: #6564DB;
+.img-intro {
+  background: linear-gradient(0deg, rgba(22,25,37,1) 17%, rgba(35,37,66,1) 35%, rgba(74,74,156,1) 74%, rgba(101,100,219,1) 96%);
 }
 
 .my-name-is {
-  display: inline-block;
-  position: relative;
   color: #161925;
   animation: fadetopurptext 1.2s ease-out;
   animation-fill-mode: forwards;
@@ -43,6 +41,10 @@ body {
 
 .mern-l, .mern-r {
   border-radius: 50%;
+}
+
+.mern-l {
+  z-index: -1;
 }
 
 .mern-l:hover {
@@ -60,18 +62,47 @@ body {
 }
 
 .opening-msg {
-  color: #161925;
+  color: #6564DB;
+}
+
+.on-bike {
+  border-left: 9px solid #f2b880;
+  padding: 0 0 5px 5px;
+}
+
+.img-bar {
+  float: right;
+  color: #6564DB;
   position: relative;
   font-family: 'Cormorant Garamond', serif;
   z-index: 2;
 }
 
 ::selection {
-	color: #079875;
+  background-color: #161925;
+	color: whitesmoke;
 }
 
 .mern-l:hover {
   animation: leanleft
+}
+
+.social {
+  color: #696047;
+  opacity: 0.75;
+}
+
+.social:hover {
+  color: #696047;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-container {
+  width: 200vw;
+  animation: fadetopurp 1.2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 
 @media screen and (min-width: 320px) {
@@ -82,41 +113,58 @@ body {
     padding-bottom: 6.5em;
   }
   .hi-there {
-    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221,192,255,1) 100%);
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     background-clip: text;
     color: transparent;
-    font-size: 4em;
-    margin-top: 20vh;
+    font-size: 4.1em;
+    margin-top: 2.75vh;
     margin-left: 20vw;
+  }
+  .img-intro {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
   }
   .my-name-is {
     position: absolute;
-    top: 30vh;
-    left: -19vw;
+    top: 32vh;
+    left: -11vw;
     font-size: 2.4em;
     margin-left: 18vw;
   }
+  .img-bar {
+    padding: 0.25em 1em 2em 1em;
+  }
   .opening-msg {
-    padding: 0 1em 15px 1em;
-    font-size: 1.5em
+    font-size: 1.5em;
+  }
+  .on-bike {
+    margin-top: 0.5em;
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 15%);
+  }
+  .social {
+    animation: slideleft 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 4s;
   }
 }
 
 @media screen and (min-width: 1124px) {
   .hi-there {
-    font-size: 4.8em;
-    margin-top: 25vh;
+    font-size: 5em;
+    margin-top: 3vh;
     margin-left: 24vw;
   }
 	.my-name-is {
     top: 41vh;
     left: -11vw;
     font-size: 4.75em;
-    margin-left: 55vw;
+    margin-left: 56vw;
+  }
+  .img-bar {
+    font-size: 2.1em;
+    margin-bottom: 0.5em;
   }
   .opening-msg {
     font-size: 2.1em;
-    margin-bottom: 0.5em;
   }
 }
 
@@ -130,7 +178,7 @@ body {
 	.my-name-is {
     left: -7vw;
   }
-  .my-name-is-container {
+  .img-intro {
     margin-right: 66.6vw;
   }
 }
@@ -143,31 +191,51 @@ body {
     animation-delay: 3s;
     padding-bottom: 6em;
   }
+  .hi-there {
+    margin-top: 0.25vh;
+  }
   .my-name-is {
-    top: 39vh;
-    left: -29vw;
+    top: 43vh;
+    left: 4.5vw;
     font-size: 4.75em;
     margin-left: 55vw;
+  }
+  .img-intro {
+    clip-path: none;
+  }
+  .on-bike {
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 12%);
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1414px) {
 	.my-name-is {
     top: 39vh;
-    left: -27vw;
+    left: 2vw;
     font-size: 4.75em;
-    margin-left: 55vw;
+    margin-left: 60vw;
   }
+}
+
+@keyframes slideleft{
+	0%{
+		transform: translateX(70px);
+		opacity: 0;
+	}
+	100%{
+		opacity: 0.75;
+	}
 }
 
 @keyframes gradientfade{
   0%{
-    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(221,192,255,1) 100%);
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
     background-clip: text;
     color: #6564DB;
   }
   100%{
-    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(221,192,255,1) 100%);
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
     background-clip: text;
     color: transparent;
   }
@@ -196,7 +264,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   100%{
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 76%);
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
   }
 }
 
