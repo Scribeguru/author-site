@@ -30,10 +30,9 @@ body {
 
 .img-intro {
   background: linear-gradient(0deg, rgba(22,25,37,1) 17%, rgba(35,37,66,1) 35%, rgba(74,74,156,1) 74%, rgba(101,100,219,1) 96%);
-  z-index: -3;
   animation: imgdrop 1s;
   animation-fill-mode: backwards;
-  animation-delay: 5.8s;
+  animation-delay: 5s;
 }
 
 .my-name-is {
@@ -87,15 +86,21 @@ body {
   color: #6564DB;
 }
 
-.on-bike {
+.on-bike, .wearymobile, .rockstarmobile {
   border-left: 9px solid #f2b880;
   padding: 0 0 5px 5px;
+}
+
+.img-intro {
+  max-height: 850px;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .img-bar {
   color: #6564DB;
   font-family: 'Cormorant Garamond', serif;
-  z-index: 2;
 }
 
 ::selection {
@@ -166,7 +171,10 @@ body {
   }
   .on-bike {
     margin-top: 1em;
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 14%);
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+  .wearymobile, .rockstarmobile {
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
   }
   .social {
     animation: slideleft 2s ease-out;
@@ -266,6 +274,9 @@ body {
     font-size: 2.4em;
     margin-left: 18vw;
   }
+  .on-bike {
+    margin-top: 1.75em;
+  }
 }
 
 @media screen and (min-width: 412px) and (min-height: 915px) {
@@ -348,7 +359,10 @@ body {
   }
   .on-bike {
     margin-top: 3em;
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 12%);
+    clip-path: polygon(14% 99%, 100% 99%, 100% 0, 0 12%);
+  }
+  .wearymobile, .rockstarmobile {
+    clip-path: polygon(14% 99%, 100% 99%, 100% 0, 0 12%);
   }
 }
 
@@ -400,8 +414,8 @@ body {
     margin-right: 34.5vw;
     font-size: 2.1em;
   }
-  .on-bike {
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 11%);
+  .on-bike, .wearymobile, .rockstarmobile {
+    clip-path: polygon(14% 99%, 100% 99%, 100% 0, 0 11%);
     margin-top: 0;
   }
   .social {
@@ -462,8 +476,8 @@ body {
   .img-bar {
     margin-top: 0;
   }
-  .on-bike {
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 11%);
+  .on-bike, .wearymobile, .rockstarmobile {
+    clip-path: polygon(14% 99%, 100% 99%, 100% 0, 0 11%);
   }
 	.my-name-is {
     top: 26vh;

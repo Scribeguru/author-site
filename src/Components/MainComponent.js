@@ -7,7 +7,7 @@ export default function Main() {
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => toggleCollapse(), 5500);
+    setTimeout(() => toggleCollapse(), 4700);
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     console.log('viewport width: ', vw, 'viewport height:', vh);
@@ -49,7 +49,13 @@ export default function Main() {
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
             <Col className="img-bar text-center">
-              <img className="on-bike img-fluid mb-3" src="/images/onbike1.PNG" alt="me on my motorbike" />
+              <img className="on-bike img-fluid" src="/images/onbike1.PNG" alt="me on my motorbike" />
+            </Col>
+            <Col className="img-bar text-center">
+              <img className="wearymobile img-fluid" src="/images/wearymobile.jpg" alt="Weary Muser mobile" />
+            </Col>
+            <Col className="img-bar text-center">
+              <img className="rockstarmobile img-fluid" src="/images/rockstarmobile.jpg" alt="Rockstar Elite mobile" />
             </Col>
           </Collapse >
         </Col>
