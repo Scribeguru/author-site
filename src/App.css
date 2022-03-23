@@ -30,6 +30,10 @@ body {
 
 .img-intro {
   background: linear-gradient(0deg, rgba(22,25,37,1) 17%, rgba(35,37,66,1) 35%, rgba(74,74,156,1) 74%, rgba(101,100,219,1) 96%);
+  z-index: -3;
+  animation: imgdrop 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 5.8s;
 }
 
 .my-name-is {
@@ -37,22 +41,40 @@ body {
   animation: fadetopurptext 1.2s ease-out;
   animation-fill-mode: forwards;
   animation-delay: 3s;
+  position: static;
 }
 
-.mern-l, .mern-r {
+.mern {
   border-radius: 50%;
+  margin-right: 32px;
 }
-
-.mern-l {
-  z-index: -1;
-}
-
-.mern-l:hover {
-  box-shadow: 4px 3px 10px;
-}
-
-.mern-r:hover {
+.mern:hover {
   box-shadow: -4px 3px 10px;
+}
+.text-intro {
+  animation: slideright 1s ease-in-out;
+  animation-delay: 6s;
+  animation-fill-mode: backwards;
+}
+.mongos {
+  animation: slideright 1.25s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.expresss {
+  animation: slideright 1.5s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.reacts {
+  animation: slideright 1.75s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.nodes {
+  animation: slideright 2s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
 }
 
 .mitch {
@@ -71,9 +93,7 @@ body {
 }
 
 .img-bar {
-  float: right;
   color: #6564DB;
-  position: relative;
   font-family: 'Cormorant Garamond', serif;
   z-index: 2;
 }
@@ -83,29 +103,29 @@ body {
 	color: whitesmoke;
 }
 
-.mern-l:hover {
-  animation: leanleft
+.social {
+  padding-right: 0;
 }
 
-.social {
+.social-h {
   color: #696047;
   opacity: 0.75;
 }
 
-.social:hover {
+.social-h:hover {
   color: #696047;
   opacity: 1;
   cursor: pointer;
 }
 
 .nav-container {
-  width: 200vw;
+  width: 102vw;
   animation: fadetopurp 1.2s ease-out;
   animation-fill-mode: forwards;
   animation-delay: 3s;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (min-height: 667px) {
   .hi-there-container {
     animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
     animation-fill-mode: forwards;
@@ -125,20 +145,264 @@ body {
   }
   .my-name-is {
     position: absolute;
-    top: 32vh;
-    left: -11vw;
+    top: 51vh;
+    left: 2vw;
     font-size: 2.4em;
     margin-left: 18vw;
+  }
+  .col {
+    flex: none;
   }
   .img-bar {
     padding: 0.25em 1em 2em 1em;
   }
   .opening-msg {
     font-size: 1.5em;
+    text-align: center;
+  }
+  .mern {
+    margin: 7px;
+    height: 65px;
   }
   .on-bike {
-    margin-top: 0.5em;
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 15%);
+    margin-top: 1em;
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 14%);
+  }
+  .social {
+    animation: slideleft 2s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 4s;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 800px) {
+  .my-name-is {
+    position: absolute;
+    top: 43vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+  .opening-msg {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 844px) {
+  .my-name-is {
+    position: absolute;
+    top: 41vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 854px) {
+  .my-name-is {
+    position: absolute;
+    top: 40vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 900px) {
+  .my-name-is {
+    position: absolute;
+    top: 38vh;
+    left: -2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 760px) {
+  .my-name-is {
+    position: absolute;
+    top: 45vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 800px) {
+  .my-name-is {
+    position: absolute;
+    top: 43vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .my-name-is {
+    position: absolute;
+    top: 41vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 384px) and (min-height: 854px) {
+  .my-name-is {
+    position: absolute;
+    top: 41vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 896px) {
+  .my-name-is {
+    position: absolute;
+    top: 39vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 915px) {
+  .my-name-is {
+    position: absolute;
+    top: 38vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 1449px) and (min-height: 900px) {
+  .my-name-is {
+    position: absolute;
+    top: 33vh;
+    left: 2vw;
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 508px) {
+  .my-name-is {
+    position: absolute;
+    top: 37vh;
+    left: -38vw;
+    font-size: 3em;
+    margin-left: 55vw;
+  }
+}
+
+@media screen and (min-width: 726px) {
+  .my-name-is {
+    position: absolute;
+    top: 33vh;
+    left: -30vw;
+    font-size: 3.8em;
+    margin-left: 52vw;
+  }
+  .opening-msg {
+    font-size: 2.5em;
+  }
+  .mern {
+    height: 100px;
+    margin-right: 70px
+  }
+  .img-bar {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+  .my-name-is {
+    position: absolute;
+    top: 28vh;
+    left: -30vw;
+    font-size: 3.8em;
+    margin-left: 52vw;
+  }
+  .opening-msg {
+    font-size: 2.5em;
+  }
+  .mern {
+    height: 100px;
+    margin-right: 70px
+  }
+  .img-bar {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (min-width: 824px) {
+  .my-name-is {
+    position: absolute;
+    top: 37vh;
+    left: -22vw;
+    font-size: 4em;
+    margin-left: 52vw;
+  }
+  .on-bike {
+    margin-top: 3em;
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 12%);
+  }
+}
+
+@media screen and (min-width: 1064px) {
+  .col {
+    flex: 1 0;
+  }
+  .hi-there-container {
+    animation: rollout 1.5s ease-in-out, fadetopurp 1.2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    padding-bottom: 4.5em;
+  }
+  .opening-msg {
+    font-size: 3em;
+    text-align: start;
+  }
+  .mern {
+    margin: 7px;
+    height: 65px;
+  }
+  .text-intro {
+    border-left: 9px solid #f2b880;
+    padding-left: 1vw;
+    margin-right: -30vw;
+  }
+  .hi-there {
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-top: 0.1vh;
+  }
+  .my-name-is {
+    position: absolute;
+    top: 27vh;
+    left: -3vw;
+    font-size: 3.7em;
+    margin-left: 63vw;
+  }
+  .img-intro {
+    clip-path: none;
+    margin-right: 0.6vw;
+  }
+  .img-bar {
+    margin-top: 0;
+  }
+  .opening-msg {
+    margin-top: 5vh;
+    margin-right: 34.5vw;
+    font-size: 2.1em;
+  }
+  .on-bike {
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 11%);
+    margin-top: 0;
   }
   .social {
     animation: slideleft 2s ease-out;
@@ -152,70 +416,93 @@ body {
     font-size: 5em;
     margin-top: 3vh;
     margin-left: 24vw;
+
   }
 	.my-name-is {
-    top: 41vh;
-    left: -11vw;
-    font-size: 4.75em;
+    position: absolute;
+    top: 32vh;
+    left: 2vw;
+    font-size: 4em;
     margin-left: 56vw;
   }
   .img-bar {
     font-size: 2.1em;
-    margin-bottom: 0.5em;
-  }
-  .opening-msg {
-    font-size: 2.1em;
+    margin-top: 0;
   }
 }
 
-@media screen and (min-width: 1186px) {
-	.my-name-is {
-    left: -9vw;
+@media screen and (min-width: 1080px) and (min-height: 810px) {
+  .my-name-is {
+    position: absolute;
+    top: 31vh;
+    left: -3vw;
+    font-size: 3.7em;
+    margin-left: 63vw;
   }
 }
 
 @media screen and (min-width: 1260px) {
 	.my-name-is {
-    left: -7vw;
-  }
-  .img-intro {
-    margin-right: 66.6vw;
-  }
-}
-
-
-@media screen and (min-width: 1064px) {
-  .hi-there-container {
-    animation: rollout 1.5s ease-in-out, fadetopurp 1.2s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    padding-bottom: 6em;
-  }
-  .hi-there {
-    margin-top: 0.25vh;
-  }
-  .my-name-is {
-    top: 43vh;
     left: 4.5vw;
-    font-size: 4.75em;
-    margin-left: 55vw;
+    margin-top: 10vh;
   }
-  .img-intro {
-    clip-path: none;
+  .opening-msg {
+    margin-right: 33.9vw;
+    margin-top: 10vh;
   }
-  .on-bike {
-    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 12%);
-    margin-top: 0;
+  .img-bar {
+    margin-top: 2.5px;
   }
 }
 
 @media screen and (min-width: 1414px) {
+  .img-intro {
+    margin-right: 1vw;
+  }
+  .img-bar {
+    margin-top: 0;
+  }
+  .on-bike {
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 11%);
+  }
 	.my-name-is {
-    top: 39vh;
+    top: 26vh;
     left: 2vw;
     font-size: 4.75em;
     margin-left: 60vw;
   }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+	.my-name-is {
+    top: 22vh;
+    left: 1vw;
+    font-size: 4em;
+    margin-left: 60vw;
+  }
+}
+
+@keyframes imgdrop{
+  0%{
+    transform: translateY(-800px);
+    opacity: 0;
+	}
+  75%{
+    opacity: 0;
+  }
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes slideright{
+  0%{
+		transform: translateX(70px);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 @keyframes slideleft{
@@ -356,24 +643,6 @@ body {
 }
 
 /* Glitch Greeting End */
-
-/* Backward */
-.hvr-backward {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
-  -webkit-transform: translateX(-8px);
-  transform: translateX(-8px);
-}
-
 
 /* Forward */
 .hvr-forward {
