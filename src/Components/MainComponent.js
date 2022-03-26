@@ -21,13 +21,13 @@ export default function Main() {
     <>
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
-          <a className="social-h" href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/images/codepen.png" height="45px" width="205px" /></a>
+          <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/images/codepen.png" height="45px" width="205px" /></a>
         </Col>
-        <Col xs="12"  className="social">
-          <a className="social-h" href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" /></a>
+        <Col xs="12" className="social">
+          <a href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" /></a>
         </Col>
-        <Col xs="12"  className="social">
-          <a className="social-h" href="https://www.linkedin.com/in/mitchellpoco/" target="_blank"><i className="social fa fa-linkedin fa-3x" /></a>
+        <Col xs="12" className="social">
+          <a href="https://www.linkedin.com/in/mitchellpoco/" target="_blank"><i className="social fa fa-linkedin fa-3x" /></a>
         </Col>
       </Row>
       <Row className="hi-there-container">
@@ -42,7 +42,7 @@ export default function Main() {
           <span className="bangG">!</span>
         </Col>
       </Row>
-      <Row>
+      <Row className="fat-top">
         <Col xs="12" className="my-name-is text-nowrap">
           My name's <span className="mitch">Mitch</span>.
         </Col>
@@ -69,9 +69,41 @@ export default function Main() {
             <a href="https://reactjs.org/" target="blank"><img className="reacts hvr-forward mern img-fluid" src="/images/reactsymbol.png" alt="react icon" /></a>
             <a href="https://nodejs.org/en/" target="blank"><img className="nodes hvr-forward mern img-fluid" src="/images/nodesymbol.png" alt="node icon" /></a>
           </Col>
+          <Col xs="12" className="laptops text-center">
+            <Col>
+              <a href="https://wearymuser.com" className="title" target="_blank" data-replace="WearyMuser.com"><span>WearyMuser.com</span></a>
+              <img src="/images/wearylaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/wearygif1.gif"} onMouseLeave={e => e.target.src = "/images/wearylaptop.jpg"} className="img-fluid wearylaptop" alt="Weary Muser laptop" />
+              <p className="wearydesc">Blog built with HTML5.</p>
+            </Col>
+            <Col>
+              <a href="https://rockstarelite.xyz" className="title" target="_blank" data-replace="RockstarElite.xyz"><span>RockstarElite.xyz</span></a>
+              <img src="/images/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/rsegif1.gif"} onMouseLeave={e => e.target.src = "/images/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
+              <p className="rockstardesc">Personal workout assembling application built with MERN stack.</p>
+            </Col>
+          </Col>
         </Col>
       </Row>
-      <div className="extra" />
+      <div className="container-fluid">
+        <Row className="aboutme mt-3">
+          <Col>
+            <p className="aboutmetext">
+              <em>
+                I create responsive, fully-featured web applications, and am constantly honing my skills.<br /><br /> I am available for full/part-time employment, and freelance work.
+              </em>
+            </p>
+          </Col>
+        </Row>
+        <Row className="cert  ">
+          <Col>
+            <img className="img-fluid" src="/images/fullstackcert.png" />
+          </Col>
+        </Row>
+      </div>
+      <Row className="contact text-center">
+        <Col>
+        contact me
+        </Col>
+      </Row>
     </>
   );
 }

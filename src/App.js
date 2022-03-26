@@ -3,7 +3,7 @@ import React from 'react';
 import Main from './Components/MainComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
-import './App.css';
+import './styles.css';
 
 function App() {
   return (

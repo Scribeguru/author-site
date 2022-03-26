@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #161925;
+  overflow-x: hidden;
+  overflow-anchor: none;
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 1; 
+  max-width: 100%; 
+}
+
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+a:hover {
+  color: #6564db;
+}
+
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #f2b880;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #f71735;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #6564db;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.aboutme, .cert {
+  animation: slideleft 2.6s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+
+.collapse {
+  padding: 0;
+}
+
+.fat-top {
+  
+  padding-top: 0;
+}
+
+.hi-there-container {
+  background-color: #161925;
+  margin-bottom: -10vh;
+}
+
+.hi-there {
+  font-family: 'Satisfy', cursive;
+  background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.img-intro {
+  background: linear-gradient(0deg, rgba(22,25,37,1) 0%, rgba(36,38,68,1) 7%, rgba(74,74,156,1) 34%, rgba(101,100,219,1) 68%);
+  animation: imgdrop 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 5s;
+}
+
+.my-name-is {
+  color: #161925;
+  animation: fadetopurptext 1.2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.mern {
+  border-radius: 50%;
+}
+.text-intro {
+  animation: slideleft 1s ease-in-out;
+  animation-delay: 6s;
+  animation-fill-mode: backwards;
+}
+.mongos {
+  animation: slideleft 1.25s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.expresss {
+  animation: slideleft 1.5s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.reacts {
+  animation: slideleft 1.75s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.nodes {
+  animation: slideleft 2s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+}
+.laptops {
+  font-family: 'Satisfy', cursive;
+  animation: slideleft 2.6s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+  position: absolute;
+  max-height: 700px;
+  max-width: 700px;
+}
+.wearylaptop, .rockstarlaptop, .cert .col img {
+  border: 1px solid #6564db;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.wearydesc, .rockstardesc {
+  font-size: 0.85em;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1.5em;
+}
+
+.mitch {
+  animation: gradientfade 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 4.2s;
+}
+
+.opening-msg, .aboutmetext {
+  color: #6564DB;
+}
+
+.contact {
+  color: #f2b880;
+}
+
+.on-bike, .wearymobile, .rockstarmobile {
+  border-left: 9px solid #f2b880;
+  padding: 0 0 5px 5px;
+}
+
+.img-intro {
+  padding-top: 0;
+  max-height: 625px;
+  min-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+.img-bar {
+  color: #6564DB;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+::selection {
+  background-color: #161925;
+	color: whitesmoke;
+}
+
+.social {
+  color: #696047;
+  padding-right: 0;
+  animation: slideleft 2s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 4s;
+  
+}
+
+.social a {
+  cursor: pointer;
+}
+
+.nav-container {
+  width: 102vw;
+  animation: fadetopurp 1.2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  margin-bottom: -1px;
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) and (min-height: 760px) {
+  .contact {
+    margin-top: 115vh;
+    font-size: 2em;
+  }
+  .laptops {
+    top: 265vh;
+  }
+  .hi-there-container {
+    animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    padding-bottom: 6.5em;
+  }
+  .hi-there {
+    font-size: 4.1em;
+    margin-top: 2.75vh;
+    margin-left: 20vw;
+  }
+  .img-intro {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 18vw;
+    margin-top: 6vh;
+  }
+  .col {
+    flex: none;
+  }
+  .img-bar {
+    padding: 0.25em 1em 2em 1em;
+  }
+  .opening-msg, .aboutmetext {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .mern {
+    margin: 7px;
+    height: 65px;
+  }
+  .on-bike {
+    margin-top: 1em;
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+  .wearymobile, .rockstarmobile {
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+}
+@media screen and (min-width: 360px) and (min-height: 800px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 110vh;
+  }
+  .laptops {
+    top: 250vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 20vw;
+    margin-top: 5vh
+  }
+}
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .contact {
+    margin-top: 135vh;
+    font-size: 2em;
+  }
+  .laptops {
+    top: 300vh;
+  }
+  .hi-there-container {
+    animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    padding-bottom: 6.5em;
+  }
+  .hi-there {
+    font-size: 4.1em;
+    margin-top: 2.75vh;
+    margin-left: 20vw;
+  }
+  .img-intro {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 18vw;
+    margin-top: 4vh;
+  }
+  .col {
+    flex: none;
+  }
+  .img-bar {
+    padding: 0.25em 1em 2em 1em;
+  }
+  .opening-msg, .aboutmetext {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .mern {
+    margin: 7px;
+    height: 65px;
+  }
+  .on-bike {
+    margin-top: 1em;
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+  .wearymobile, .rockstarmobile {
+    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+}
+@media screen and (min-width: 375px) and (min-height: 812px) {
+  .contact {
+    margin-top: 120vh;
+    font-size: 2em;
+  }
+  .my-name-is {
+    margin-top: 5vh;
+  }
+  .laptops {
+    top: 250vh;
+  }
+  .img-bar {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 384px) and (min-height: 854px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 105vh;
+  }
+  .laptops {
+    top: 237vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 20vw;
+    margin-top: 5vh
+  }
+}
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 100vh;
+  }
+  .laptops {
+    top: 235vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 20vw;
+    margin-top: 5vh
+  }
+}
+@media screen and (min-width: 412px) and (min-height: 915px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 100vh;
+  }
+  .laptops {
+    top: 50vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 16vw;
+    margin-top: 5vh
+  }
+}
+@media screen and (min-width: 412px) and (min-height: 883px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 105vh;
+  }
+  .laptops {
+    top: 230vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 16vw;
+    margin-top: 5vh
+  }
+  .on-bike {
+    margin-top: 1.75em;
+  }
+}
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .contact {
+    font-size: 2em;
+    margin-top: 100vh;
+  }
+  .laptops {
+    top: 223vh;
+    left: 0vw;
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 20vw;
+    margin-top: 5vh
+  }
+}
+@media screen and (min-width: 428px) and (min-height: 926px) {
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 18vw;
+  }
+}
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+  .opening-msg {
+    font-size: 1.8em;
+  }
+  .aboutmetext {
+    font-size: 1.6em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .wearydesc, .rockstardesc {
+    font-size: 1.25em;
+  }
+  .contact {
+    margin-top: 120vh;
+    font-size: 2.5em;
+  }
+  .my-name-is {
+    font-size: 3em;
+    margin-left: 45vw;
+    margin-top: 7vh;
+  }
+  .cert {
+    margin-left: 17vw;
+  }
+  .laptops {
+    margin-top: -60vh;
+    margin-left: 6vw;
+  }
+}
+@media screen and (min-width: 810px) and (min-height: 1080px) {
+  .opening-msg {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 2em;
+  }
+  .aboutmetext {
+    font-size: 1.8em;
+  }
+  .contact {
+    font-size: 3em;
+    margin-top: 140vh;
+  }
+  .laptops {
+    top: 200vh;
+    left: 6.5vw;
+  }
+  .my-name-is {
+    font-size: 3em;
+    margin-left: 38vw;
+    margin-top: 5vh
+  }
+  .cert {
+    text-align: center;
+  }
+}
+
+/* Chrome on TV */
+@media screen and (min-width: 911px) and (min-height: 438px) {
+  .aboutme {
+    border-right: 9px solid #f2b880;
+    padding-right: 1vw;
+    margin-left: 2vw;
+    margin-right: 63.6vw;
+  }
+  .col {
+    flex: 1 0;
+  }
+  .hi-there-container {
+    animation: rollout 1.5s ease-in-out, fadetopurp 1.2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    padding-bottom: 3.3em;
+  }
+  .mern {
+    margin: 7px;
+    height: 54px;
+  }
+  .laptops {
+    top: 115vh;
+    left: 38.5vw;
+    height: 700px;
+    width: 500px;
+  }
+  .text-intro {
+    border-left: 9px solid #f2b880;
+    padding-left: 1vw;
+    margin-right: -30vw;
+  }
+  .hi-there {
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-top: 0.1vh;
+    margin-left: 25vw;
+    font-size: 3em;
+  }
+  .my-name-is {
+    font-size: 3em;
+    margin-left: 63vw;
+  }
+  .img-intro {
+    clip-path: none;
+    margin-right: 0.6vw;
+  }
+  .img-bar {
+    margin-top: 0;
+  }
+  .opening-msg {
+    margin-top: 5vh;
+    margin-right: 34.5vw;
+    font-size: 1.4em;
+  }
+  .aboutmetext {
+    font-size: 1.5em;
+    text-align: end;
+  }
+  .on-bike, .wearymobile, .rockstarmobile {
+    clip-path: polygon(14% 99%, 100% 99%, 100% 0, 0 11%);
+    margin-top: 0;
+  }
+}
+/* End Chrome on TV */
+
+/* Chrome on Laptop */
+@media screen and (min-width: 1024px) and (min-height: 502px) {
+  .aboutmetext {
+    text-align: end;
+  }
+  .laptops {
+    top: 100vh;
+    left: 38.5vw;
+    height: 700px;
+    width: 500px;
+  }
+}
+/* End Chrome on Laptop */
+
+/* Firefox on TV */
+@media screen and (min-width: 1366px) and (min-height: 643px) {
+  .my-name-is {
+    margin-bottom: -15vh;
+  }
+}
+/* End Firefox on TV */
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .contact {
+    margin-top: 20vh;
+    font-size: 3em;
+  }
+  .aboutmetext {
+    margin-top: 3vh;
+    font-size: 2em;
+  }
+  .laptops {
+    margin-top: -35vh;
+    margin-left: 3vw;
+    height: auto;
+    width: auto;
+  }
+  .cert {
+    margin-top: 6vh;
+    margin-left: 1vw;
+  }
+  .opening-msg {
+    font-size: 2em;
+    text-align: start;
+  }
+  .hi-there-container {
+    margin-bottom: -3vh;
+  }
+  .hi-there {
+    font-size: 5em;
+  }
+  .mern {
+    height: 70px;
+  }
+  .my-name-is {
+    font-size: 4em;
+    margin-top: -7vh;
+    margin-left: 66vw;
+  }
+}
+
+/* Firefox on Laptop */
+@media screen and (min-width: 1536px) and (min-height: 739px) {
+  .hi-there {
+    font-size: 6em;
+    margin-bottom: 2vh;
+  }
+  .cert {
+    margin-top: 5vh;
+    margin-left: 2vw;
+  }
+  .contact {
+    margin-top: 15vh;
+    font-size: 3em;
+  }
+  .opening-msg {
+    margin-top: 17vh;
+    font-size: 2em;
+    text-align: start;
+  }
+  .aboutmetext {
+    font-size: 1.9em;
+    margin-top: 3vh;
+  }
+  .mern {
+    height: 80px;
+  }
+  .laptops {
+    height: auto;
+    width: auto;
+    top: 90vh;
+    left: 43vw;
+  }
+	.my-name-is {
+    font-size: 4em;
+    margin-top: -2vh;
+    margin-left: 66vw;
+  }
+  .wearydesc, .rockstardesc {
+    font-size: .9em;
+  }
+}
+/* End Firefox on Laptop */
+
+
+@keyframes imgdrop{
+  0%{
+    transform: translateY(-800px);
+    opacity: 0;
+	}
+  75%{
+    opacity: 0;
+  }
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes slideleft{
+  0%{
+		transform: translateX(20px);
+		opacity: 0;
+	}
+  75%{
+    opacity: 0;
+  }
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes gradientfade{
+  0%{
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
+    background-clip: text;
+    color: #6564DB;
+  }
+  100%{
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes fadetopurp {
+  0%{
+    background-color: #161925;
+  }
+  100%{
+    background-color:#6564DB;
+  }
+}
+
+@keyframes fadetopurptext {
+  0%{
+    color: #161925;
+  }
+  100%{
+    color:#6564DB;
+  }
+}
+
+@keyframes rollup{
+  0%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100%{
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+  }
+}
+
+@keyframes rollout{
+  0%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100%{
+    clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
+  }
+}
+
+/* Glitch Greeting Start */
+
+.hG {
+	animation: glitchGreet 1s linear;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+.iG {
+	animation: glitchGreet 1s linear;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
+}
+.tG {
+  animation: glitchGreet .5s ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: backwards;
+}
+.hGtwo {
+  animation: glitchGreet 1.3s linear;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+}
+.eG {
+  animation: glitchGreet 1.3s linear;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+}
+.rG {
+  animation: glitchGreet 0.5s ease-in;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+.eGtwo {
+  animation: glitchGreet 0.5s ease-in;
+  animation-fill-mode: backwards;
+}
+.bangG {
+  animation: glitchGreet 1.5s linear;
+  animation-delay: 1.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes glitchGreet{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 0.6;
+  }
+  19%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0.9;
+  }
+  47%{
+    opacity: 0;
+  }
+  55%{
+    opacity: 1;
+  }
+  77%{
+    opacity: 0.5;
+  }
+  86%{
+    opacity: 0.8;
+  }
+  96%{
+    opacity: 0;
+  }
+  98%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Glitch Greeting End */
