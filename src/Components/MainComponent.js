@@ -88,20 +88,20 @@ export default function Main() {
           <Col>
             <p className="aboutmetext">
               <em>
-                I create responsive, fully-featured web applications, and am constantly honing my skills.<br /><br /> I am available for full/part-time employment, and freelance work.
+                I create responsive, fully-featured web applications, and am constantly honing my skills.<br /><br /> I am available for remote or on-site, full or part-time employment, and freelance work.
               </em>
             </p>
           </Col>
         </Row>
-        <Row className="cert  ">
+        <Row>
           <Col>
-            <img className="img-fluid" src="/images/fullstackcert.png" />
+            <img className="img-fluid cert" src="/images/fullstackcert.png" />
           </Col>
         </Row>
       </div>
       <Row className="contact text-center">
         <Col>
-        contact me
+        Contact Me<hr className="mx-5" />
         </Col>
       </Row>
     </>
