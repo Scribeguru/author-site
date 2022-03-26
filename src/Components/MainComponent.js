@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
+import { Row, Col, Collapse, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 // import { Route, Switch, Redirect, Link } from 'react-router-dom';
 
 export default function Main() {
@@ -99,9 +99,28 @@ export default function Main() {
           </Col>
         </Row>
       </div>
-      <Row className="contact text-center">
-        <Col>
-        Contact Me<hr className="mx-5" />
+      <Row className="contact text-center mx-5">
+        <Col xs="12">
+          <b>Contact Me</b><hr />
+        </Col>
+        <Col className="mx-auto" sm="6">
+          <Form action="https://formsubmit.co/pocomitch@gmail.com" method="POST" className="text-start">
+            <FormGroup>
+              <Label className="form-title" name="name" id="name">Name:</Label>
+              <Input name="name" placeholder="Your Name" required></Input>
+            </FormGroup>
+            <FormGroup>
+              <Label className="form-title" name="nameof" id="nameof">Email:</Label>
+              <Input type="email" name="nameof" placeholder="Your Email"></Input>
+            </FormGroup>
+            <FormGroup>
+              <Label className="form-title" name="message" id="message">Message:</Label>
+              <Input type="textarea" rows="4" name="message" placeholder="Your Message"></Input>
+              <Col className="text-end">
+                <Button type="submit" className="btn-lg">Send</Button>
+              </Col>
+            </FormGroup>
+          </Form>
         </Col>
       </Row>
     </>

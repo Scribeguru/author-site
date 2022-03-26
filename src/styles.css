@@ -81,9 +81,16 @@ a {
   padding: 0;
 }
 
-.fat-top {
-  
-  padding-top: 0;
+form {
+  border-radius: 15px;
+}
+
+label {
+  color: #f2b880;
+}
+
+.form-title {
+  font-size: .75em;
 }
 
 .hi-there-container {
@@ -96,6 +103,24 @@ a {
   background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     background-clip: text;
     color: transparent;
+}
+
+.btn-lg {
+  background-color: #f2b880;
+  color: #161925;
+  margin-top: 1vh;
+}
+
+input.form-control, textarea.form-control {
+  background-color: whitesmoke;
+  font-size: .4em;
+}
+
+input.form-control:focus {
+  background-color: whitesmoke;
+    
+    box-shadow: 1px 1px 2px #161925;
+    outline: none;
 }
 
 .img-intro {
