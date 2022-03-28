@@ -23,10 +23,10 @@ export default function Main() {
         <Col xs="12" className="social">
           <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/images/codepen.png" height="45px" width="205px" /></a>
         </Col>
-        <Col xs="12" className="social">
+        <Col xs="12">
           <a href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" /></a>
         </Col>
-        <Col xs="12" className="social">
+        <Col xs="12" className="pb-1">
           <a href="https://www.linkedin.com/in/mitchellpoco/" target="_blank"><i className="social fa fa-linkedin fa-3x" /></a>
         </Col>
       </Row>

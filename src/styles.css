@@ -116,10 +116,10 @@ input.form-control, textarea.form-control {
   font-size: .4em;
 }
 
-input.form-control:focus {
+input.form-control:focus, textarea.form-control:focus {
   background-color: whitesmoke;
-    
-    box-shadow: 1px 1px 2px #161925;
+    border: 1px inset #161925;
+    box-shadow: none;
     outline: none;
 }
 
@@ -542,7 +542,7 @@ hr {
   }
   .mern {
     height: 70px;
-    margin-right: 1em;
+    margin: 10px;
   }
   .opening-msg {
     margin-top: 3vh;
