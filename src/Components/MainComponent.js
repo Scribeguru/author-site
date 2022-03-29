@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Collapse, Form, FormGroup, Label, Input, Button } from 'reactstrap';
-// import { Route, Switch, Redirect, Link } from 'react-router-dom';
 
 export default function Main() {
 
@@ -21,7 +20,7 @@ export default function Main() {
     <>
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
-          <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/images/codepen.png" height="45px" width="205px" /></a>
+          <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" /></a>
         </Col>
         <Col xs="12">
           <a href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" /></a>
@@ -49,13 +48,13 @@ export default function Main() {
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
             <Col className="img-bar text-center">
-              <img className="on-bike img-fluid" src="/images/onbike1.PNG" alt="me on my motorbike" />
+              <img className="on-bike img-fluid" src="/onbike1.PNG" alt="me on my motorbike" />
             </Col>
             <Col className="img-bar text-center">
-              <img className="wearymobile img-fluid" src="/images/wearymobile.jpg" alt="Weary Muser mobile" />
+              <img className="wearymobile img-fluid" src="/wearymobile.jpg" alt="Weary Muser mobile" />
             </Col>
             <Col className="img-bar text-center">
-              <img className="rockstarmobile img-fluid" src="/images/rockstarmobile.jpg" alt="Rockstar Elite mobile" />
+              <img className="rockstarmobile img-fluid" src="/rockstarmobile.jpg" alt="Rockstar Elite mobile" />
             </Col>
           </Collapse >
         </Col>
@@ -64,20 +63,20 @@ export default function Main() {
             I'm a California-based software developer with experience in React, Node.js, Express.js, and MongoDB.
           </em></p>
           <Col>
-            <a href="https://www.mongodb.com/" target="blank"><img className="mongos hvr-forward mern img-fluid" src="/images/mongosymbol.png" alt="mongo icon" /></a>
-            <a href="https://expressjs.com/" target="blank"><img className="expresss hvr-forward mern img-fluid" src="/images/expresssymbol.png" alt="express icon" /></a>
-            <a href="https://reactjs.org/" target="blank"><img className="reacts hvr-forward mern img-fluid" src="/images/reactsymbol.png" alt="react icon" /></a>
-            <a href="https://nodejs.org/en/" target="blank"><img className="nodes hvr-forward mern img-fluid" src="/images/nodesymbol.png" alt="node icon" /></a>
+            <a href="https://www.mongodb.com/" target="blank"><img className="mongos hvr-forward mern img-fluid" src="/mongosymbol.png" alt="mongo icon" /></a>
+            <a href="https://expressjs.com/" target="blank"><img className="expresss hvr-forward mern img-fluid" src="/expresssymbol.png" alt="express icon" /></a>
+            <a href="https://reactjs.org/" target="blank"><img className="reacts hvr-forward mern img-fluid" src="/reactsymbol.png" alt="react icon" /></a>
+            <a href="https://nodejs.org/en/" target="blank"><img className="nodes hvr-forward mern img-fluid" src="/nodesymbol.png" alt="node icon" /></a>
           </Col>
           <Col xs="12" className="laptops text-center">
             <Col>
               <a href="https://wearymuser.com" className="title" target="_blank" data-replace="WearyMuser.com"><span>WearyMuser.com</span></a>
-              <img src="/images/wearylaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/wearygif1.gif"} onMouseLeave={e => e.target.src = "/images/wearylaptop.jpg"} className="img-fluid wearylaptop" alt="Weary Muser laptop" />
+              <img src="/wearylaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/wearygif1.gif"} onMouseLeave={e => e.target.src = "/wearylaptop.jpg"} className="img-fluid wearylaptop" alt="Weary Muser laptop" />
               <p className="wearydesc">Blog built with HTML5.</p>
             </Col>
             <Col>
               <a href="https://rockstarelite.xyz" className="title" target="_blank" data-replace="RockstarElite.xyz"><span>RockstarElite.xyz</span></a>
-              <img src="/images/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/rsegif1.gif"} onMouseLeave={e => e.target.src = "/images/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
+              <img src="/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/rsegif1.gif"} onMouseLeave={e => e.target.src = "/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
               <p className="rockstardesc">Personal workout assembling application built with MERN stack.</p>
             </Col>
           </Col>
@@ -95,7 +94,7 @@ export default function Main() {
         </Row>
         <Row>
           <Col>
-            <img className="img-fluid cert" src="/images/fullstackcert.png" />
+            <img className="img-fluid cert" src="/fullstackcert.png" />
           </Col>
         </Row>
       </div>
