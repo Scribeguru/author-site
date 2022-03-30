@@ -72,9 +72,12 @@ a {
 }
 
 .aboutme, .cert, .contact, hr {
-  animation: slideleft 2.6s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 2.6s ease-in-out;
+          animation: slideleft 2.6s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .collapse {
@@ -101,7 +104,8 @@ label {
 .hi-there {
   font-family: 'Satisfy', cursive;
   background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     color: transparent;
 }
 
@@ -125,51 +129,75 @@ input.form-control:focus, textarea.form-control:focus {
 
 .img-intro {
   background: linear-gradient(0deg, rgba(22,25,37,1) 0%, rgba(36,38,68,1) 38%, rgba(74,74,156,1) 73%, rgba(101,100,219,1) 92%);
-  animation: imgdrop 1s;
-  animation-fill-mode: backwards;
-  animation-delay: 5s;
+  -webkit-animation: imgdrop 1s;
+          animation: imgdrop 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .my-name-is {
   color: #161925;
-  animation: fadetopurptext 1.2s ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+  -webkit-animation: fadetopurptext 1.2s ease-out;
+          animation: fadetopurptext 1.2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .mern {
   border-radius: 50%;
 }
 .text-intro {
-  animation: slideleft 1s ease-in-out;
-  animation-delay: 6s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 1s ease-in-out;
+          animation: slideleft 1s ease-in-out;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .mongos {
-  animation: slideleft 1.25s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 1.25s ease-in-out;
+          animation: slideleft 1.25s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .expresss {
-  animation: slideleft 1.5s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 1.5s ease-in-out;
+          animation: slideleft 1.5s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .reacts {
-  animation: slideleft 1.75s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 1.75s ease-in-out;
+          animation: slideleft 1.75s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .nodes {
-  animation: slideleft 2s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 2s ease-in-out;
+          animation: slideleft 2s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .laptops {
   font-family: 'Satisfy', cursive;
-  animation: slideleft 2.6s ease-in-out;
-  animation-delay: 7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: slideleft 2.6s ease-in-out;
+          animation: slideleft 2.6s ease-in-out;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   position: absolute;
   max-height: 700px;
   max-width: 700px;
@@ -189,9 +217,12 @@ input.form-control:focus, textarea.form-control:focus {
 }
 
 .mitch {
-  animation: gradientfade 2s ease;
-  animation-fill-mode: forwards;
-  animation-delay: 4.2s;
+  -webkit-animation: gradientfade 2s ease;
+          animation: gradientfade 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
 }
 
 .opening-msg, .aboutmetext {
@@ -226,6 +257,11 @@ hr {
   font-family: 'Cormorant Garamond', serif;
 }
 
+::-moz-selection {
+  background-color: #161925;
+	color: whitesmoke;
+}
+
 ::selection {
   background-color: #161925;
 	color: whitesmoke;
@@ -234,9 +270,12 @@ hr {
 .social {
   color: #696047;
   padding-right: 0;
-  animation: slideleft 2s ease-out;
-  animation-fill-mode: backwards;
-  animation-delay: 4s;
+  -webkit-animation: slideleft 2s ease-out;
+          animation: slideleft 2s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   
 }
 
@@ -246,28 +285,34 @@ hr {
 
 .nav-container {
   width: 102vw;
-  animation: fadetopurp 1.2s ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+  -webkit-animation: fadetopurp 1.2s ease-out;
+          animation: fadetopurp 1.2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   margin-bottom: -1px;
 }
 
 /* Mobile */
-@media screen and (min-width: 360px) and (min-height: 760px) {
+@media screen and (min-width: 375px) and (min-height: 547px) {
   .cert {
     text-align: center;
   }
   .contact {
-    margin-top: 115vh;
+    margin-top: 145vh;
     font-size: 2em;
   }
   .laptops {
-    top: 265vh;
+    top: 85em;
   }
   .hi-there-container {
-    animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
+    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
     padding-bottom: 6.5em;
   }
   .hi-there {
@@ -276,7 +321,8 @@ hr {
     margin-left: 20vw;
   }
   .img-intro {
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
   }
   .my-name-is {
     font-size: 2.4em;
@@ -299,20 +345,76 @@ hr {
   }
   .on-bike {
     margin-top: 1em;
-    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
   }
   .wearymobile, .rockstarmobile {
-    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+}
+@media screen and (min-width: 360px) and (min-height: 760px) {
+  .cert {
+    text-align: center;
+  }
+  .contact {
+    margin-top: 115vh;
+    font-size: 2em;
+  }
+  .laptops {
+    top: 85em;
+  }
+  .hi-there-container {
+    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    padding-bottom: 6.5em;
+  }
+  .hi-there {
+    font-size: 4.1em;
+    margin-top: 2.75vh;
+    margin-left: 20vw;
+  }
+  .img-intro {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+  }
+  .my-name-is {
+    font-size: 2.4em;
+    margin-left: 18vw;
+    margin-top: 6vh;
+  }
+  .col {
+    flex: none;
+  }
+  .img-bar {
+    padding: 0.25em 1em 2em 1em;
+  }
+  .opening-msg, .aboutmetext {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .mern {
+    margin: 7px;
+    height: 65px;
+  }
+  .on-bike {
+    margin-top: 1em;
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+  }
+  .wearymobile, .rockstarmobile {
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
   }
 }
 @media screen and (min-width: 360px) and (min-height: 800px) {
   .contact {
     font-size: 2em;
     margin-top: 110vh;
-  }
-  .laptops {
-    top: 250vh;
-    left: 0vw;
   }
   .my-name-is {
     font-size: 2.4em;
@@ -329,12 +431,15 @@ hr {
     font-size: 2em;
   }
   .laptops {
-    top: 302vh;
+    top: 84em;
   }
   .hi-there-container {
-    animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
+    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
     padding-bottom: 6.5em;
   }
   .hi-there {
@@ -343,7 +448,8 @@ hr {
     margin-left: 20vw;
   }
   .img-intro {
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 14%);
   }
   .my-name-is {
     font-size: 2.4em;
@@ -373,7 +479,7 @@ hr {
     margin-top: 5vh;
   }
   .laptops {
-    top: 250vh;
+    top: 85em;
   }
   .img-bar {
     margin-top: 1em;
@@ -384,8 +490,7 @@ hr {
     margin-top: 105vh;
   }
   .laptops {
-    top: 237vh;
-    left: 0vw;
+    top: 85em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -398,12 +503,12 @@ hr {
     margin-top: 100vh;
   }
   .laptops {
-    top: 240vh;
+    top: 84.5em;
   }
 }
 @media screen and (min-width: 412px) and (min-height: 915px) {
   .laptops {
-    top: 50vh;
+    top: 86em;
   }
   .my-name-is {
     margin-left: 16vw;
@@ -414,7 +519,7 @@ hr {
     margin-top: 105vh;
   }
   .laptops {
-    top: 230vh;
+    top: 86em;
   }
   .on-bike {
     margin-top: 1.75em;
@@ -425,7 +530,7 @@ hr {
     margin-top: 100vh;
   }
   .laptops {
-    top: 229vh;
+    top: 86em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -437,6 +542,9 @@ hr {
   }
   .contact {
     margin-top: 106vh;
+  }
+  .laptops { 
+    top: 88em;
   }
 }
 @media screen and (min-width: 800px) and (min-height: 1280px) {
@@ -462,10 +570,10 @@ hr {
     margin-top: 7vh;
   }
   .cert {
-    margin-left: 17vw;
+    margin-left: 19vw;
   }
   .laptops {
-    margin-top: -60vh;
+    margin-top: -13em;
     margin-left: 6vw;
   }
 }
@@ -483,7 +591,7 @@ hr {
     font-size: 3em;
   }
   .laptops {
-    top: 200vh;
+    top: 68em;
     left: 6.5vw;
   }
   .my-name-is {
@@ -519,16 +627,21 @@ hr {
     margin-top: 1vh;
   }
   .hi-there-container {
-    animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
+    -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
     margin-bottom: -13vh;
   }
   .on-bike {
-    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
   }
   .wearymobile, .rockstarmobile {
-    clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+    -webkit-clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
+            clip-path: polygon(12% 99%, 100% 99%, 100% 0, 0 14%);
   }
   .hi-there {
     font-size: 4em;
@@ -551,7 +664,7 @@ hr {
     text-align: start;
   }
   .laptops {
-    margin-top: 5vh;
+    margin-top: -63em;
     margin-left: 8vw;
   }
   .text-intro {
@@ -560,7 +673,8 @@ hr {
   }
   .img-intro {
     margin-right: 67.5vw;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
 }
 /* End Firefox on TV */
@@ -595,10 +709,6 @@ hr {
   }
   .mern {
     height: 70px;
-  }
-  .laptops {
-    margin-top: 3vh;
-    margin-left: 8vw;
   }
   .opening-msg {
     margin-top: 6vh;
@@ -637,9 +747,12 @@ hr {
     margin-top: 1vh;
   }
   .hi-there-container {
-    animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
+    -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
     margin-bottom: -35vh;
   }
   .hi-there {
@@ -662,7 +775,7 @@ hr {
     text-align: start;
   }
   .laptops {
-    top: 75vh;
+    top: 85em;
     left: 35vw;
   }
   .text-intro {
@@ -674,7 +787,7 @@ hr {
   }
 }
 
-/* Firefox on Laptop */
+/* Firefox/Chrome on Laptop */
 @media screen and (min-width: 1536px) and (min-height: 739px) {
   .hi-there {
     font-size: 6em;
@@ -705,8 +818,7 @@ hr {
     height: 80px;
   }
   .laptops {
-    top: 99vh;
-    left: 35vw;
+    margin-top: -59em;
   }
 	.my-name-is {
     font-size: 4em;
@@ -717,18 +829,40 @@ hr {
     font-size: .9em;
   }
 }
-/* End Firefox on Laptop */
+/* End Firefox/Chrome on Laptop */
 
-/* Chrome on Laptop */
-@media screen and (min-width: 1536px) and (min-height: 754px) {
+
+@-webkit-keyframes imgdrop{
+  0%{
+    transform: translateY(-800px);
+    opacity: 0;
+	}
+  75%{
+    opacity: 0;
+  }
+	100%{
+		opacity: 1;
+	}
 }
-/* End Chrome on Laptop */
 
 
 @keyframes imgdrop{
   0%{
     transform: translateY(-800px);
     opacity: 0;
+	}
+  75%{
+    opacity: 0;
+  }
+	100%{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes slideleft{
+  0%{
+		transform: translateX(20px);
+		opacity: 0;
 	}
   75%{
     opacity: 0;
@@ -751,6 +885,19 @@ hr {
 	}
 }
 
+@-webkit-keyframes gradientfade{
+  0%{
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
+    -webkit-background-clip: text;
+    color: #6564DB;
+  }
+  100%{
+    background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
 @keyframes gradientfade{
   0%{
     background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
@@ -764,12 +911,30 @@ hr {
   }
 }
 
+@-webkit-keyframes fadetopurp {
+  0%{
+    background-color: #161925;
+  }
+  100%{
+    background-color:#6564DB;
+  }
+}
+
 @keyframes fadetopurp {
   0%{
     background-color: #161925;
   }
   100%{
     background-color:#6564DB;
+  }
+}
+
+@-webkit-keyframes fadetopurptext {
+  0%{
+    color: #161925;
+  }
+  100%{
+    color:#6564DB;
   }
 }
 
@@ -782,64 +947,149 @@ hr {
   }
 }
 
-@keyframes rollup{
+@-webkit-keyframes rollup{
   0%{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   100%{
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+  }
+}
+
+@keyframes rollup{
+  0%{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100%{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 0 57%);
+  }
+}
+
+@-webkit-keyframes rollout{
+  0%{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100%{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
+            clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
   }
 }
 
 @keyframes rollout{
   0%{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   100%{
-    clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
+            clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
   }
 }
 
 /* Glitch Greeting Start */
 
 .hG {
-	animation: glitchGreet 1s linear;
-  animation-delay: 0.4s;
-  animation-fill-mode: backwards;
+	-webkit-animation: glitchGreet 1s linear;
+	        animation: glitchGreet 1s linear;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .iG {
-	animation: glitchGreet 1s linear;
-  animation-delay: 0.9s;
-  animation-fill-mode: backwards;
+	-webkit-animation: glitchGreet 1s linear;
+	        animation: glitchGreet 1s linear;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .tG {
-  animation: glitchGreet .5s ease-in-out;
-  animation-delay: 0.1s;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet .5s ease-in-out;
+          animation: glitchGreet .5s ease-in-out;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .hGtwo {
-  animation: glitchGreet 1.3s linear;
-  animation-delay: 0.7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet 1.3s linear;
+          animation: glitchGreet 1.3s linear;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .eG {
-  animation: glitchGreet 1.3s linear;
-  animation-delay: 0.7s;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet 1.3s linear;
+          animation: glitchGreet 1.3s linear;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .rG {
-  animation: glitchGreet 0.5s ease-in;
-  animation-delay: 0.4s;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet 0.5s ease-in;
+          animation: glitchGreet 0.5s ease-in;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .eGtwo {
-  animation: glitchGreet 0.5s ease-in;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet 0.5s ease-in;
+          animation: glitchGreet 0.5s ease-in;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .bangG {
-  animation: glitchGreet 1.5s linear;
-  animation-delay: 1.3s;
-  animation-fill-mode: backwards;
+  -webkit-animation: glitchGreet 1.5s linear;
+          animation: glitchGreet 1.5s linear;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes glitchGreet{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 0.6;
+  }
+  19%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0.9;
+  }
+  47%{
+    opacity: 0;
+  }
+  55%{
+    opacity: 1;
+  }
+  77%{
+    opacity: 0.5;
+  }
+  86%{
+    opacity: 0.8;
+  }
+  96%{
+    opacity: 0;
+  }
+  98%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 @keyframes glitchGreet{

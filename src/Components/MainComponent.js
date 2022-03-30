@@ -71,12 +71,12 @@ export default function Main() {
           <Col xs="12" className="laptops text-center">
             <Col>
               <a href="https://wearymuser.com" className="title" target="_blank" data-replace="WearyMuser.com"><span>WearyMuser.com</span></a>
-              <img src="/wearylaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/wearygif1.gif"} onMouseLeave={e => e.target.src = "/wearylaptop.jpg"} className="img-fluid wearylaptop" alt="Weary Muser laptop" />
+              <img src="/wearylaptop.jpg" onMouseEnter={e => e.target.src = "/wearygif1.gif"} onMouseLeave={e => e.target.src = "/wearylaptop.jpg"} className="img-fluid wearylaptop" alt="Weary Muser laptop" />
               <p className="wearydesc">Blog built with HTML5.</p>
             </Col>
             <Col>
               <a href="https://rockstarelite.xyz" className="title" target="_blank" data-replace="RockstarElite.xyz"><span>RockstarElite.xyz</span></a>
-              <img src="/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/gifs/rsegif1.gif"} onMouseLeave={e => e.target.src = "/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
+              <img src="/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/rsegif1.gif"} onMouseLeave={e => e.target.src = "/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
               <p className="rockstardesc">Personal workout assembling application built with MERN stack.</p>
             </Col>
           </Col>
@@ -100,7 +100,7 @@ export default function Main() {
       </div>
       <Row className="contact text-center mx-5">
         <Col xs="12">
-          <b>Contact Me</b><hr />
+          <b>Reach Out</b><hr />
         </Col>
         <Col className="mx-auto" sm="6">
           <Form action="https://formsubmit.co/pocomitch@gmail.com" method="POST" className="text-start">
