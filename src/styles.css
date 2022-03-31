@@ -217,6 +217,8 @@ input.form-control:focus, textarea.form-control:focus {
 }
 
 .mitch {
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-animation: gradientfade 2s ease;
           animation: gradientfade 2s ease;
   -webkit-animation-fill-mode: forwards;
@@ -300,7 +302,7 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 145vh;
+    margin-top: 27em;
     font-size: 2em;
   }
   .laptops {
@@ -358,7 +360,7 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 115vh;
+    margin-top: 27em;
     font-size: 2em;
   }
   .laptops {
@@ -414,7 +416,7 @@ hr {
 @media screen and (min-width: 360px) and (min-height: 800px) {
   .contact {
     font-size: 2em;
-    margin-top: 110vh;
+    margin-top: 27em;
   }
   .my-name-is {
     font-size: 2.4em;
@@ -427,7 +429,7 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 125vh;
+    margin-top: 26.5em;
     font-size: 2em;
   }
   .laptops {
@@ -473,7 +475,7 @@ hr {
 }
 @media screen and (min-width: 375px) and (min-height: 812px) {
   .contact {
-    margin-top: 115vh;
+    margin-top: 27em;
   }
   .my-name-is {
     margin-top: 5vh;
@@ -487,7 +489,7 @@ hr {
 }
 @media screen and (min-width: 384px) and (min-height: 854px) {
   .contact {
-    margin-top: 105vh;
+    margin-top: 27.5em;
   }
   .laptops {
     top: 85em;
@@ -500,7 +502,7 @@ hr {
 @media screen and (min-width: 390px) and (min-height: 844px) {
   .contact {
     font-size: 2em;
-    margin-top: 100vh;
+    margin-top: 27em;
   }
   .laptops {
     top: 84.5em;
@@ -516,7 +518,7 @@ hr {
 }
 @media screen and (min-width: 412px) and (min-height: 883px) {
   .contact {
-    margin-top: 105vh;
+    margin-top: 29em;
   }
   .laptops {
     top: 86em;
@@ -527,7 +529,7 @@ hr {
 }
 @media screen and (min-width: 414px) and (min-height: 896px) {
   .contact {
-    margin-top: 100vh;
+    margin-top: 27em;
   }
   .laptops {
     top: 86em;
@@ -541,7 +543,7 @@ hr {
     margin-left: 18vw;
   }
   .contact {
-    margin-top: 106vh;
+    margin-top: 30em;
   }
   .laptops { 
     top: 88em;
@@ -561,7 +563,7 @@ hr {
     font-size: 1.25em;
   }
   .contact {
-    margin-top: 120vh;
+    margin-top: 40em;
     font-size: 2.5em;
   }
   .my-name-is {
@@ -587,7 +589,7 @@ hr {
     font-size: 1.8em;
   }
   .contact {
-    margin-top: 140vh;
+    margin-top: 30em;
     font-size: 3em;
   }
   .laptops {
@@ -624,7 +626,7 @@ hr {
   }
   .contact {
     font-size: 2.5em;
-    margin-top: 1vh;
+    margin-top: 1em;
   }
   .hi-there-container {
     -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
@@ -695,7 +697,7 @@ hr {
     margin-top: 8vh;
   }
   .contact {
-    margin-top: 2vh;
+    margin-top: 1em;
   }
   .hi-there {
     font-size: 4.5em;
@@ -744,7 +746,7 @@ hr {
   }
   .contact {
     font-size: 2.5em;
-    margin-top: 1vh;
+    margin-top: 1em;
   }
   .hi-there-container {
     -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
@@ -800,7 +802,7 @@ hr {
     width: auto;
   }
   .contact {
-    margin-top: 15vh;
+    margin-top: 3em;
     font-size: 3em;
   }
   .opening-msg {
@@ -901,12 +903,14 @@ hr {
 @keyframes gradientfade{
   0%{
     background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     color: #6564DB;
   }
   100%{
     background: linear-gradient(45deg, rgba(242, 184, 128, 1) 38%, rgba(105, 96, 71, 1) 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     color: transparent;
   }
 }
@@ -1060,33 +1064,6 @@ hr {
   0%{
     opacity: 0;
   }
-  15%{
-    opacity: 0.6;
-  }
-  19%{
-    opacity: 0;
-  }
-  40%{
-    opacity: 0.9;
-  }
-  47%{
-    opacity: 0;
-  }
-  55%{
-    opacity: 1;
-  }
-  77%{
-    opacity: 0.5;
-  }
-  86%{
-    opacity: 0.8;
-  }
-  96%{
-    opacity: 0;
-  }
-  98%{
-    opacity: 0.9;
-  }
   100%{
     opacity: 1;
   }
@@ -1095,33 +1072,6 @@ hr {
 @keyframes glitchGreet{
   0%{
     opacity: 0;
-  }
-  15%{
-    opacity: 0.6;
-  }
-  19%{
-    opacity: 0;
-  }
-  40%{
-    opacity: 0.9;
-  }
-  47%{
-    opacity: 0;
-  }
-  55%{
-    opacity: 1;
-  }
-  77%{
-    opacity: 0.5;
-  }
-  86%{
-    opacity: 0.8;
-  }
-  96%{
-    opacity: 0;
-  }
-  98%{
-    opacity: 0.9;
   }
   100%{
     opacity: 1;
