@@ -16,19 +16,19 @@ export default function Main() {
     console.log('viewport width: ', vw, 'viewport height:', vh);
   }, [setOpen])
 
-  const forceClick = useRef();
+  const refScroll = useRef();
 
   function toggleCollapse() {
     setOpen(isOpen => isOpen = !isOpen);
   }
 
   function scrollToPoint() {
-    forceClick.current.click();
+    refScroll.current.scrollIntoView({behavior: 'smooth'});
   }
 
   return (
     <>
-      <a href="#details" ref={forceClick} hidden />
+      <a href="#details"  hidden />
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
           <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" alt="Codepen" /></a>
@@ -56,7 +56,7 @@ export default function Main() {
         <Col xs="12" className="my-name-is text-nowrap">
           My name's <span className="mitch">Mitch</span>.
         </Col>
-        <span id="details" />
+        <span ref={refScroll} />
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
             <Col className="img-bar text-center">
