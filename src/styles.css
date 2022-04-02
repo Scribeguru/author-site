@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 body {
   font-family: 'Cormorant Garamond', serif;
@@ -102,11 +102,9 @@ label {
 }
 
 .hi-there {
-  font-family: 'Satisfy', cursive;
-  background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+  font-family: 'Raleway', sans-serif;
     -webkit-background-clip: text;
             background-clip: text;
-    color: transparent;
 }
 
 .btn-lg {
@@ -191,7 +189,7 @@ input.form-control:focus, textarea.form-control:focus {
           animation-fill-mode: backwards;
 }
 .laptops {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Raleway', sans-serif;
   -webkit-animation: slideleft 2.6s ease-in-out;
           animation: slideleft 2.6s ease-in-out;
   -webkit-animation-delay: 7s;
@@ -1002,79 +1000,74 @@ hr {
 	        animation: glitchGreet 1s linear;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .iG {
 	-webkit-animation: glitchGreet 1s linear;
 	        animation: glitchGreet 1s linear;
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .tG {
   -webkit-animation: glitchGreet .5s ease-in-out;
           animation: glitchGreet .5s ease-in-out;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .hGtwo {
   -webkit-animation: glitchGreet 1.3s linear;
           animation: glitchGreet 1.3s linear;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .eG {
   -webkit-animation: glitchGreet 1.3s linear;
           animation: glitchGreet 1.3s linear;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .rG {
   -webkit-animation: glitchGreet 0.5s ease-in;
           animation: glitchGreet 0.5s ease-in;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .eGtwo {
   -webkit-animation: glitchGreet 0.5s ease-in;
           animation: glitchGreet 0.5s ease-in;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .bangG {
   -webkit-animation: glitchGreet 1.5s linear;
           animation: glitchGreet 1.5s linear;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes glitchGreet{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @keyframes glitchGreet{
   0%{
-    opacity: 0;
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    -webkit-background-clip: text;
+    color: #6564DB;
   }
   100%{
-    opacity: 1;
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
 
