@@ -1,4 +1,9 @@
+html {
+  margin-right: none;
+}
+
 body {
+  scroll-behavior: smooth;
   font-family: 'Cormorant Garamond', serif;
   background-color: #161925;
   overflow-x: hidden;
@@ -94,6 +99,7 @@ label {
 }
 
 .hi-there-container {
+  margin-right: 0;
   background-color: #161925;
   margin-bottom: -10vh;
 }

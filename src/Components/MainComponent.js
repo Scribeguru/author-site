@@ -1,23 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Row, Col, Collapse, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import smoothscroll from 'smoothscroll-polyfill';
 
 export default function Main() {
+
+  smoothscroll.polyfill();
 
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => toggleCollapse(), 4700);
+    setTimeout(() => scrollToPoint(), 7000);
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     console.log('viewport width: ', vw, 'viewport height:', vh);
   }, [setOpen])
 
+  const forceClick = useRef();
+
   function toggleCollapse() {
     setOpen(isOpen => isOpen = !isOpen);
   }
 
+  function scrollToPoint() {
+    forceClick.current.click();
+  }
+
   return (
     <>
+      <a href="#details" ref={forceClick} hidden />
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
           <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" alt="Codepen" /></a>
@@ -45,6 +56,7 @@ export default function Main() {
         <Col xs="12" className="my-name-is text-nowrap">
           My name's <span className="mitch">Mitch</span>.
         </Col>
+        <span id="details" />
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
             <Col className="img-bar text-center">
