@@ -20,13 +20,13 @@ export default function Main() {
     <>
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
-          <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" /></a>
+          <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" alt="Codepen" /></a>
         </Col>
         <Col xs="12">
-          <a href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" /></a>
+          <a href="https://github.com/Scribeguru" target="_blank"><i className="social fa fa-github fa-3x" alt="Github" /></a>
         </Col>
         <Col xs="12" className="pb-1">
-          <a href="https://www.linkedin.com/in/mitchellpoco/" target="_blank"><i className="social fa fa-linkedin fa-3x" /></a>
+          <a href="https://www.linkedin.com/in/mitchellpoco/" target="_blank"><i className="social fa fa-linkedin fa-3x" alt="Linkedin" /></a>
         </Col>
       </Row>
       <Row className="hi-there-container">
