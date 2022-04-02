@@ -302,11 +302,11 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 28em;
+    margin-top: 29em;
     font-size: 2em;
   }
   .laptops {
-    top: 85em;
+    top: 86em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
@@ -360,11 +360,11 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 28em;
+    margin-top: 29em;
     font-size: 2em;
   }
   .laptops {
-    top: 85em;
+    top: 86em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
@@ -416,7 +416,7 @@ hr {
 @media screen and (min-width: 360px) and (min-height: 800px) {
   .contact {
     font-size: 2em;
-    margin-top: 28em;
+    margin-top: 29em;
   }
   .my-name-is {
     font-size: 2.4em;
@@ -429,11 +429,11 @@ hr {
     text-align: center;
   }
   .contact {
-    margin-top: 27.5em;
+    margin-top: 28.5em;
     font-size: 2em;
   }
   .laptops {
-    top: 84em;
+    top: 85em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
@@ -475,13 +475,13 @@ hr {
 }
 @media screen and (min-width: 375px) and (min-height: 812px) {
   .contact {
-    margin-top: 28em;
+    margin-top: 29em;
   }
   .my-name-is {
     margin-top: 5vh;
   }
   .laptops {
-    top: 85em;
+    top: 86em;
   }
   .img-bar {
     margin-top: 1em;
@@ -489,10 +489,10 @@ hr {
 }
 @media screen and (min-width: 384px) and (min-height: 854px) {
   .contact {
-    margin-top: 28.5em;
+    margin-top: 29.5em;
   }
   .laptops {
-    top: 85em;
+    top: 86em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -502,15 +502,15 @@ hr {
 @media screen and (min-width: 390px) and (min-height: 844px) {
   .contact {
     font-size: 2em;
-    margin-top: 28em;
+    margin-top: 29em;
   }
   .laptops {
-    top: 84.5em;
+    top: 85.5em;
   }
 }
 @media screen and (min-width: 412px) and (min-height: 915px) {
   .laptops {
-    top: 86em;
+    top: 87em;
   }
   .my-name-is {
     margin-left: 16vw;
@@ -518,10 +518,10 @@ hr {
 }
 @media screen and (min-width: 412px) and (min-height: 883px) {
   .contact {
-    margin-top: 30em;
+    margin-top: 31em;
   }
   .laptops {
-    top: 86em;
+    top: 87em;
   }
   .on-bike {
     margin-top: 1.75em;
@@ -529,10 +529,10 @@ hr {
 }
 @media screen and (min-width: 414px) and (min-height: 896px) {
   .contact {
-    margin-top: 28em;
+    margin-top: 29em;
   }
   .laptops {
-    top: 86em;
+    top: 87em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -543,10 +543,10 @@ hr {
     margin-left: 18vw;
   }
   .contact {
-    margin-top: 31em;
+    margin-top: 32em;
   }
   .laptops { 
-    top: 88em;
+    top: 89em;
   }
 }
 @media screen and (min-width: 800px) and (min-height: 1280px) {
@@ -563,7 +563,7 @@ hr {
     font-size: 1.25em;
   }
   .contact {
-    margin-top: 41em;
+    margin-top: 42em;
     font-size: 2.5em;
   }
   .my-name-is {
@@ -575,7 +575,7 @@ hr {
     margin-left: 19vw;
   }
   .laptops {
-    margin-top: -13em;
+    margin-top: -14em;
     margin-left: 6vw;
   }
 }
@@ -589,11 +589,11 @@ hr {
     font-size: 1.8em;
   }
   .contact {
-    margin-top: 31em;
+    margin-top: 32em;
     font-size: 3em;
   }
   .laptops {
-    top: 68em;
+    top: 69em;
     left: 6.5vw;
   }
   .my-name-is {
