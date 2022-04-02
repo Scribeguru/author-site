@@ -99,9 +99,9 @@ label {
 }
 
 .hi-there {
+  background-clip: text;
+  -webkit-background-clip: text;
   font-family: 'Raleway', sans-serif;
-    -webkit-background-clip: text;
-            background-clip: text;
 }
 
 .btn-lg {
@@ -212,8 +212,8 @@ input.form-control:focus, textarea.form-control:focus {
 }
 
 .mitch {
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: gradientfade 2s ease;
           animation: gradientfade 2s ease;
   -webkit-animation-fill-mode: forwards;
@@ -996,6 +996,8 @@ hr {
 /* Glitch Greeting Start */
 
 .hG {
+  -webkit-background-clip: text;
+  background-clip: text;
 	-webkit-animation: glitchGreet 1s linear;
 	        animation: glitchGreet 1s linear;
   -webkit-animation-delay: 0.4s;
@@ -1004,6 +1006,8 @@ hr {
           animation-fill-mode: forwards;
 }
 .iG {
+  -webkit-background-clip: text;
+  background-clip: text;
 	-webkit-animation: glitchGreet 1s linear;
 	        animation: glitchGreet 1s linear;
   -webkit-animation-delay: 0.9s;
@@ -1012,6 +1016,8 @@ hr {
           animation-fill-mode: forwards;
 }
 .tG {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet .5s ease-in-out;
           animation: glitchGreet .5s ease-in-out;
   -webkit-animation-delay: 0.1s;
@@ -1020,6 +1026,8 @@ hr {
           animation-fill-mode: forwards;
 }
 .hGtwo {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet 1.3s linear;
           animation: glitchGreet 1.3s linear;
   -webkit-animation-delay: 0.7s;
@@ -1028,6 +1036,8 @@ hr {
           animation-fill-mode: forwards;
 }
 .eG {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet 1.3s linear;
           animation: glitchGreet 1.3s linear;
   -webkit-animation-delay: 0.7s;
@@ -1035,7 +1045,10 @@ hr {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+
 .rG {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet 0.5s ease-in;
           animation: glitchGreet 0.5s ease-in;
   -webkit-animation-delay: 0.4s;
@@ -1044,12 +1057,16 @@ hr {
           animation-fill-mode: forwards;
 }
 .eGtwo {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet 0.5s ease-in;
           animation: glitchGreet 0.5s ease-in;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .bangG {
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: glitchGreet 1.5s linear;
           animation: glitchGreet 1.5s linear;
   -webkit-animation-delay: 1.3s;
@@ -1062,11 +1079,13 @@ hr {
   0%{
     background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     color: #6564DB;
   }
   100%{
     background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
   }
 }
@@ -1075,11 +1094,19 @@ hr {
   0%{
     background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: #161925;
+  }
+  50%{
+    background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
     color: #6564DB;
   }
   100%{
     background: linear-gradient(-45deg, rgba(242, 184, 128, 1) 38%, rgba(221, 192, 255, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
   }
 }

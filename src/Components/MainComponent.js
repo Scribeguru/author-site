@@ -110,11 +110,11 @@ export default function Main() {
             </FormGroup>
             <FormGroup>
               <Label className="form-title" name="nameof" id="nameof">Email:</Label>
-              <Input type="email" name="nameof" placeholder="Your Email"></Input>
+              <Input type="email" name="nameof" placeholder="Your Email" required></Input>
             </FormGroup>
             <FormGroup>
               <Label className="form-title" name="message" id="message">Message:</Label>
-              <Input type="textarea" rows="4" name="message" placeholder="Your Message"></Input>
+              <Input type="textarea" rows="4" name="message" placeholder="Your Message" required></Input>
               <Col className="text-end">
                 <Button type="submit" className="btn-lg">Send</Button>
               </Col>
