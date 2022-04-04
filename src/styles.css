@@ -205,6 +205,7 @@ input.form-control:focus, textarea.form-control:focus {
 }
 .wearylaptop, .rockstarlaptop, .cert {
   border: 1px solid #6564db;
+  border-radius: 15px;
 }
 
 .title {
