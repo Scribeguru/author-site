@@ -89,7 +89,7 @@ export default function Main() {
             <Col>
               <a href="https://rockstarelite.xyz" className="title" target="_blank" data-replace="RockstarElite.xyz"><span>RockstarElite.xyz</span></a>
               <img src="/rockstarlaptop.jpg" onMouseEnter={e => e.target.src = "/rsegif1.gif"} onMouseLeave={e => e.target.src = "/rockstarlaptop.jpg"} className="img-fluid rockstarlaptop" alt="Rockstar Elite laptop" />
-              <p className="rockstardesc">Personal workout assembling application built with MERN stack.</p>
+              <p className="rockstardesc">Workout assembling application built with MERN stack.</p>
             </Col>
           </Col>
         </Col>
