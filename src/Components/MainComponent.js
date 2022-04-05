@@ -9,8 +9,8 @@ export default function Main() {
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => toggleCollapse(), 4700);
-    setTimeout(() => scrollToPoint(), 7000);
+    setTimeout(() => toggleCollapse(), 5000);
+    setTimeout(() => scrollToPoint(), 5000);
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     console.log('viewport width: ', vw, 'viewport height:', vh);

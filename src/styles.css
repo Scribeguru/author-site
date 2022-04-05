@@ -144,8 +144,8 @@ input.form-control:focus, textarea.form-control:focus {
           animation: fadetopurptext 1.2s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .mern {
@@ -154,49 +154,49 @@ input.form-control:focus, textarea.form-control:focus {
 .text-intro {
   -webkit-animation: slideleft 1s ease-in-out;
           animation: slideleft 1s ease-in-out;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .mongos {
   -webkit-animation: slideleft 1.25s ease-in-out;
           animation: slideleft 1.25s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .expresss {
   -webkit-animation: slideleft 1.5s ease-in-out;
           animation: slideleft 1.5s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .reacts {
   -webkit-animation: slideleft 1.75s ease-in-out;
           animation: slideleft 1.75s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .nodes {
   -webkit-animation: slideleft 2s ease-in-out;
           animation: slideleft 2s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .laptops {
   font-family: 'Raleway', sans-serif;
-  -webkit-animation: slideleft 2.6s ease-in-out;
-          animation: slideleft 2.6s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation: slideleft 2s ease-in-out;
+          animation: slideleft 2s ease-in-out;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   position: absolute;
@@ -225,8 +225,8 @@ input.form-control:focus, textarea.form-control:focus {
           animation: gradientfade 2s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .opening-msg, .aboutmetext {
@@ -248,7 +248,7 @@ hr {
 
 .img-intro {
   padding-top: 0;
-  max-height: 625px;
+  max-height: 640px;
   min-height: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -274,12 +274,12 @@ hr {
 .social {
   color: #696047;
   padding-right: 0;
-  -webkit-animation: slideleft 2s ease-out;
-          animation: slideleft 2s ease-out;
+  -webkit-animation: slideleft 1s ease-out;
+          animation: slideleft 1s ease-out;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   
 }
 
@@ -293,8 +293,8 @@ hr {
           animation: fadetopurp 1.2s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   margin-bottom: -1px;
 }
 
@@ -311,12 +311,12 @@ hr {
     top: 86em;
   }
   .hi-there-container {
-    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
-            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     padding-bottom: 6.5em;
   }
   .hi-there {
@@ -369,12 +369,12 @@ hr {
     top: 86em;
   }
   .hi-there-container {
-    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
-            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     padding-bottom: 6.5em;
   }
   .hi-there {
@@ -438,12 +438,12 @@ hr {
     top: 85em;
   }
   .hi-there-container {
-    -webkit-animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
-            animation: rollup 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     padding-bottom: 6.5em;
   }
   .hi-there {
@@ -631,12 +631,12 @@ hr {
     margin-top: 1em;
   }
   .hi-there-container {
-    -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
-            animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation: rollout 1s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollout 1s ease-out, fadetopurp 1.2s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     margin-bottom: -13vh;
   }
   .on-bike {
@@ -751,12 +751,12 @@ hr {
     margin-top: 1em;
   }
   .hi-there-container {
-    -webkit-animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
-            animation: rollout 1.5s ease-out, fadetopurp 1.2s ease-out;
+    -webkit-animation: rollout 1s ease-out, fadetopurp 1.2s ease-out;
+            animation: rollout 1s ease-out, fadetopurp 1.2s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     margin-bottom: -35vh;
   }
   .hi-there {
@@ -1076,8 +1076,8 @@ hr {
   background-clip: text;
   -webkit-animation: glitchGreet 1.5s linear;
           animation: glitchGreet 1.5s linear;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 1;
+          animation-delay: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
