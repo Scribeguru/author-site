@@ -76,8 +76,8 @@ a {
 .aboutme, .cert, .contact, hr {
   -webkit-animation: slideleft 2.6s ease-in-out;
           animation: slideleft 2.6s ease-in-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -114,6 +114,10 @@ label {
   background-color: #f2b880;
   color: #161925;
   margin-top: 1vh;
+}
+
+.btn-lg:hover {
+  background-color: #6564db;
 }
 
 input.form-control, textarea.form-control {
@@ -206,6 +210,10 @@ input.form-control:focus, textarea.form-control:focus {
 .wearylaptop, .rockstarlaptop, .cert {
   border: 1px solid #6564db;
   border-radius: 15px;
+}
+
+.resume:hover {
+  cursor: pointer;
 }
 
 .title {

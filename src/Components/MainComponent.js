@@ -17,6 +17,7 @@ export default function Main() {
   }, [setOpen])
 
   const refScroll = useRef();
+  const resume = useRef();
 
   function toggleCollapse() {
     setOpen(isOpen => isOpen = !isOpen);
@@ -28,6 +29,7 @@ export default function Main() {
 
   return (
     <>
+      <a href="/Mitchell_Poco_Resume1.PDF" target="_blank" hidden />
       <a href="#details"  hidden />
       <Row className="nav-container container-fluid pt-4">
         <Col xs="12" className="social">
@@ -110,11 +112,9 @@ export default function Main() {
           </Col>
         </Row>
       </div>
-      <Row className="contact text-center mx-5">
-        <Col xs="12">
+      <Row className="contact text-center mx-2 mb-4">
+        <Col sm="6">
           <b>Reach Out</b><hr />
-        </Col>
-        <Col className="mx-auto" sm="6">
           <Form action="https://formsubmit.co/pocomitch@gmail.com" method="POST" className="text-start">
             <FormGroup>
               <Label className="form-title" name="name" id="name">Name:</Label>
@@ -132,6 +132,10 @@ export default function Main() {
               </Col>
             </FormGroup>
           </Form>
+        </Col>
+        <Col sm="6">
+          <b>Résumé</b><hr />
+          <a className="pb-1" href="Mitchell_Poco_Resume1.PDF"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
         </Col>
       </Row>
     </>
