@@ -73,7 +73,7 @@ a {
   vertical-align: top;
 }
 
-.aboutme, .cert, .contact, hr {
+.aboutme, .contact, hr {
   -webkit-animation: slideleft 2.6s ease-in-out;
           animation: slideleft 2.6s ease-in-out;
   -webkit-animation-delay: 5s;
@@ -89,9 +89,14 @@ a {
 form {
   border-radius: 15px;
 }
-
+v
 label {
   color: #f2b880;
+}
+
+i.fa-angle-up:hover {
+  cursor: pointer;
+  color: #f71735;
 }
 
 .form-title {
@@ -210,6 +215,15 @@ input.form-control:focus, textarea.form-control:focus {
 .wearylaptop, .rockstarlaptop, .cert {
   border: 1px solid #6564db;
   border-radius: 15px;
+}
+
+.cert {
+  -webkit-animation: slideleft 2.6s ease-in-out, float 6s ease-in-out infinite;
+          animation: slideleft 2.6s ease-in-out, float 6s ease-in-out infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .resume:hover {
@@ -1006,6 +1020,21 @@ hr {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
             clip-path: polygon(0 0, 100% 0, 100% 8%, 0 145%);
   }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 /* Glitch Greeting Start */

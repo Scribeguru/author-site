@@ -17,22 +17,21 @@ export default function Main() {
   }, [setOpen])
 
   const refScroll = useRef();
-  const resume = useRef();
 
   function toggleCollapse() {
     setOpen(isOpen => isOpen = !isOpen);
   }
 
   function scrollToPoint() {
-    refScroll.current.scrollIntoView({behavior: 'smooth'});
+    refScroll.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
     <>
       <a href="/Mitchell_Poco_Resume1.PDF" target="_blank" hidden />
-      <a href="#details"  hidden />
+      <a href="#details" hidden />
       <Row className="nav-container container-fluid pt-4">
-        <Col xs="12" className="social">
+        <Col xs="12" className="social" id="top">
           <a href="https://codepen.io/mitchellpoco/pens/public" target="_blank"><img src="/codepen.png" height="45px" width="205px" alt="Codepen" /></a>
         </Col>
         <Col xs="12">
@@ -112,7 +111,7 @@ export default function Main() {
           </Col>
         </Row>
       </div>
-      <Row className="contact text-center mx-2 mb-4">
+      <Row className="contact text-center mx-2 mb-5">
         <Col sm="6">
           <b>Reach Out</b><hr />
           <Form action="https://formsubmit.co/pocomitch@gmail.com" method="POST" className="text-start">
@@ -135,7 +134,10 @@ export default function Main() {
         </Col>
         <Col sm="6">
           <b>Résumé</b><hr />
-          <a className="pb-1" href="Mitchell_Poco_Resume1.PDF"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
+          <a className="pb-1 mt-4" href="Mitchell_Poco_Resume1.PDF"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
+        </Col>
+        <Col className="text-center">
+          <i className="fa fa-angle-up fa-2x" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} />
         </Col>
       </Row>
     </>
