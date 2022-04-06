@@ -17,13 +17,19 @@ export default function Main() {
   }, [setOpen])
 
   const refScroll = useRef();
+  const photoRollScroll = useRef();
 
   function toggleCollapse() {
     setOpen(isOpen => isOpen = !isOpen);
   }
 
   function scrollToPoint() {
-    refScroll.current.scrollIntoView({ behavior: 'smooth' });
+    refScroll.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollTop() {
+    photoRollScroll.current.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: -100000, left: 0, behavior: "smooth" });
   }
 
   return (
@@ -61,6 +67,7 @@ export default function Main() {
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
             <Col className="img-bar text-center">
+              <span ref={photoRollScroll} />
               <img className="on-bike img-fluid" src="/onbike1.PNG" alt="me on my motorbike" />
             </Col>
             <Col className="img-bar text-center">
@@ -134,10 +141,10 @@ export default function Main() {
         </Col>
         <Col sm="6">
           <b>Résumé</b><hr />
-          <a className="pb-1 mt-4" href="Mitchell_Poco_Resume1.PDF"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
+          <a className="pb-1 mt-4" href="Mitchell_Poco_Resume1.PDF" target="_blank"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
         </Col>
         <Col className="text-center">
-          <i className="fa fa-angle-up fa-2x" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} />
+          <i className="fa fa-angle-up fa-2x" onClick={scrollTop} />
         </Col>
       </Row>
     </>
