@@ -300,8 +300,8 @@ hr {
           animation: slideleft 1s ease-out;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
   
 }
 
@@ -330,7 +330,7 @@ hr {
     font-size: 2em;
   }
   .laptops {
-    top: 86em;
+    top: 88em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
@@ -388,7 +388,7 @@ hr {
     font-size: 2em;
   }
   .laptops {
-    top: 86em;
+    top: 88em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
@@ -457,7 +457,7 @@ hr {
     font-size: 2em;
   }
   .laptops {
-    top: 85em;
+    top: 87em;
   }
   .hi-there-container {
     -webkit-animation: rollup 1s ease-out, fadetopurp 1.2s ease-out;
@@ -505,7 +505,7 @@ hr {
     margin-top: 5vh;
   }
   .laptops {
-    top: 86em;
+    top: 88em;
   }
   .img-bar {
     margin-top: 1em;
@@ -516,7 +516,7 @@ hr {
     margin-top: 29.5em;
   }
   .laptops {
-    top: 86em;
+    top: 88em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -529,12 +529,12 @@ hr {
     margin-top: 29em;
   }
   .laptops {
-    top: 85.5em;
+    top: 87.5em;
   }
 }
 @media screen and (min-width: 412px) and (min-height: 915px) {
   .laptops {
-    top: 87em;
+    top: 89em;
   }
   .my-name-is {
     margin-left: 16vw;
@@ -545,7 +545,7 @@ hr {
     margin-top: 31em;
   }
   .laptops {
-    top: 87em;
+    top: 89em;
   }
   .on-bike {
     margin-top: 1.75em;
@@ -556,7 +556,7 @@ hr {
     margin-top: 29em;
   }
   .laptops {
-    top: 87em;
+    top: 89em;
   }
   .my-name-is {
     margin-left: 20vw;
@@ -570,7 +570,7 @@ hr {
     margin-top: 32em;
   }
   .laptops { 
-    top: 89em;
+    top: 91em;
   }
 }
 @media screen and (min-width: 800px) and (min-height: 1280px) {
@@ -860,6 +860,14 @@ hr {
 }
 /* End Firefox/Chrome on Laptop */
 
+@media screen and (min-width: 1600px) {
+  .mern {
+    height: 85px;
+  }
+	.my-name-is {
+    margin-top: 17vh;
+  }
+}
 
 @-webkit-keyframes imgdrop{
   0%{
