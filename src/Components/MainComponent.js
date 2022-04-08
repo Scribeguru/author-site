@@ -29,7 +29,7 @@ export default function Main() {
 
   function scrollTop() {
     photoRollScroll.current.scrollIntoView({ behavior: "smooth" });
-    window.scrollTo({ top: -100000, left: 0, behavior: "smooth" });
+    setTimeout(() => window.scroll({ top: -10000, left: 0, behavior: "smooth" }), 1516);
   }
 
   return (
@@ -66,8 +66,8 @@ export default function Main() {
         <span ref={refScroll} />
         <Col className="img-intro">
           <Collapse isOpen={isOpen}>
+            <span ref={photoRollScroll} />
             <Col className="img-bar text-center">
-              <span ref={photoRollScroll} />
               <img className="on-bike img-fluid" src="/onbike1.PNG" alt="me on my motorbike" />
             </Col>
             <Col className="img-bar text-center">
@@ -120,7 +120,7 @@ export default function Main() {
       </div>
       <Row className="contact text-center mx-2 mb-5">
         <Col sm="6">
-          <b>Reach Out</b><hr />
+          Reach Out<hr />
           <Form action="https://formsubmit.co/pocomitch@gmail.com" method="POST" className="text-start">
             <FormGroup>
               <Label className="form-title" name="name" id="name">Name:</Label>
@@ -140,7 +140,7 @@ export default function Main() {
           </Form>
         </Col>
         <Col sm="6">
-          <b>Résumé</b><hr />
+          Résumé<hr />
           <a className="pb-1 mt-4" href="Mitchell_Poco_Resume1.PDF" target="_blank"><img className="img-fluid resume" src="/resumeimg1.png" alt="résumé" /></a>
         </Col>
         <Col className="text-center">
