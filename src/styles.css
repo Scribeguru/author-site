@@ -869,10 +869,6 @@ hr {
   }
 }
 
-@media screen and (min-width: 1366px) and (min-height: 615px) {
-
-}
-
 @-webkit-keyframes imgdrop{
   0%{
     transform: translateY(-800px);
