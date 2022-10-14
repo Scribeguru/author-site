@@ -5,6 +5,20 @@ body {
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+p {
+  padding-right: .6em;
+  line-height: 1.6em;
+  font-size: .85em;
+}
+
 .maincontainer {
   padding: 2em;
 }
@@ -30,11 +44,21 @@ body {
 .img-1 {
   max-width: 100%;
   height: auto;
-  border: 3px solid black;
+  border-radius: .27em;
 } 
 
 .info {
   padding: 1.5em;
+}
+
+.contact {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em;
+}
+
+.contact:hover {
+  font-style: italic;
+  cursor: pointer;
 }
 
 .navigation {
