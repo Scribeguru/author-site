@@ -1,26 +1,67 @@
 body {
   overflow-x: hidden;
   background-color: #fbfaf2;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.5em;
+  font-family: 'Gilda Display', serif;
+  font-size: 1.6em;
+}
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #5dddae;
+  transform: rotate(3deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+::selection {
+  background-color: #5dddae;
+  color: #9B2121;
 }
 
 a {
   text-decoration: none;
+  color:#212529;
 }
 
 a:hover {
-  font-style: italic;
+  color: #5dddae;
 }
 
 p {
+  font-family: 'Gilda Display', serif;
   padding-right: .6em;
   line-height: 1.6em;
-  font-size: .85em;
+  font-size: 1.345rem;
 }
 
 .maincontainer {
   padding: 2em;
+}
+
+.intro {
+  font-size: .9em;
+}
+
+.about {
+  font-family: 'Gilda Display', serif;
+  padding-bottom: .6em;
+  line-height: 1.6em;
+  font-size: 1.345rem;
 }
 
 .name {
@@ -31,42 +72,68 @@ p {
 
 .in-brackets {
   font-style: italic;
-  font-size: 1.1em;
 }
 
-.brackets {
-  font-family: 'Amatic SC', cursive;
-  font-size: 2.6em;
-  font-style: normal;
-  padding-top: 6em;
+.form-control:focus {
+  outline: none;
+  border: 2px solid #5dddae;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+  border: 2px solid #5dddae;
+  box-shadow: none;
 }
 
 .img-1 {
   max-width: 100%;
   height: auto;
   border-radius: .27em;
-} 
-
-.info {
-  padding: 1.5em;
+  border: 2px solid #212529;
+  border-left: 4px solid #212529;
 }
 
-.contact {
+.info {
+  padding: 1.2em;
+}
+
+.sample {
+  font-size: .7em;
+}
+
+.sample-img {
+  border: 2px solid #212529;
+}
+
+.rates {
   font-family: 'Amatic SC', cursive;
   font-size: 1.6em;
 }
 
-.contact:hover {
-  font-style: italic;
-  cursor: pointer;
+.contact {
+  background-color: #212529;
+  color:#fbfaf2;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em;
+}
+
+form {
+  font-size: .6em;
+  font-family: 'Gilda Display', serif;
 }
 
 .navigation {
-  
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em;
 }
 
 @media (max-width: 351px) {
   .in-brackets {
     font-size: .9em;
   }
+}
+
+footer {
+  font-size: .85rem;
 }
