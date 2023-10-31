@@ -2,15 +2,18 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Main from './Components/MainComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.css';
-import './reset.css';
 import './styles.css';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 function App() {
   return (
-    <BrowserRouter>
-      <Main />
-    </BrowserRouter>
+    <div className='app'>
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
+    </div>
   );
 }
 

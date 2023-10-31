@@ -1,139 +1,69 @@
-body {
-  overflow-x: hidden;
-  background-color: #fbfaf2;
-  font-family: 'Gilda Display', serif;
-  font-size: 1.6em;
+@font-face {
+  font-family: 'Quicksand';
+  src: local('Quicksand'), url(./fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
 }
 
-.highlight-container, .highlight {
-  position: relative;
-}
-
-.highlight-container {
-  display: inline-block;
-}
-.highlight-container:before {
-  content: " ";
-  display: block;
-  height: 90%;
-  width: 100%;
-  margin-left: -3px;
-  margin-right: -3px;
-  position: absolute;
-  background: #5dddae;
-  transform: rotate(3deg);
-  top: -1px;
-  left: -1px;
-  border-radius: 20% 25% 20% 24%;
-  padding: 10px 3px 3px 10px;
-}
-
-::selection {
-  background-color: #5dddae;
-  color: #9B2121;
+@font-face {
+  font-family: 'Gilda Display';
+  src: local('Gilda Display'), url(./fonts/GildaDisplay-Regular.ttf) format('truetype');
 }
 
 a {
-  text-decoration: none;
-  color:#212529;
+  color: inherit;
+  text-decoration: underline 0.06em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 600ms;
+  text-underline-offset: 0.2em
 }
 
 a:hover {
-  color: #5dddae;
+  color: inherit;
+  text-decoration-color: rgba(0, 0, 0, 1);
+
 }
 
-p {
-  font-family: 'Gilda Display', serif;
-  padding-right: .6em;
-  line-height: 1.6em;
-  font-size: 1.345rem;
-}
-
-.maincontainer {
-  padding: 2em;
-}
-
-.intro {
-  font-size: .9em;
-}
-
-.about {
-  font-family: 'Gilda Display', serif;
-  padding-bottom: .6em;
-  line-height: 1.6em;
-  font-size: 1.345rem;
-}
-
-.name {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3.5em;
-  font-style: normal;
-}
-
-.in-brackets {
-  font-style: italic;
-}
-
-.form-control:focus {
-  outline: none;
-  border: 2px solid #5dddae;
-  box-shadow: none;
-}
-
-.btn:focus {
-  outline: none;
-  border: 2px solid #5dddae;
-  box-shadow: none;
-}
-
-.img-1 {
+body {
   max-width: 100%;
-  height: auto;
-  border-radius: .27em;
-  border: 2px solid #212529;
-  border-left: 4px solid #212529;
-}
-
-.info {
-  padding: 1.2em;
-}
-
-.sample {
-  font-size: .7em;
-}
-
-.sample-img {
-  border: 2px solid #212529;
-}
-
-.rates {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.6em;
-}
-
-.contact {
-  background-color: #212529;
-  color:#fbfaf2;
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.6em;
-}
-
-form {
-  font-size: .6em;
+  height: 100%;
+  overflow-x: hidden;
   font-family: 'Gilda Display', serif;
-}
-
-.navigation {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.6em;
-}
-
-@media (max-width: 351px) {
-  .in-brackets {
-    font-size: .9em;
-  }
+  font-size: 1.3em;
+  background-color: rgb(238, 235, 229);
 }
 
 footer {
-  font-size: .85rem;
+  margin-top: auto;
+  background-color: black;
+  color: #eeebe5;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  width: 100%;
+}
+
+.bookImg {
+  max-height: 365px;
+}
+
+.name {
+  white-space: nowrap;
+  font-size: 1.1em;
+  font-weight: 525;
+}
+
+.nav {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.social-icon {
+  max-height: 30px;
 }
