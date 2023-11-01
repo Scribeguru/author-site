@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <>
-      <Container className='container'>
+      <Container className='foundation'>
         <Row>
 
         </Row>

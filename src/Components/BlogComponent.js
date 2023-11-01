@@ -6,24 +6,32 @@ import Articles from './ArticleComponent';
 
 export default function Blog(props) {
 
+  const [arrow, setArrow] = useState(<img className='img-fluid scrollTop' src='./uparrowfilled.png' />)
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <>
-      <Container>
+      <Container className='foundation'>
         <Row className='py-5 text-center'>
           <Col>
             <h1>
-              {Articles()[props.currentArticle].title}
+            <span dangerouslySetInnerHTML={{__html: Articles()[props.currentArticle].title}} />
             </h1>
           </Col>
         </Row>
-        <Row className='text-center'>
-          <Col xs='12'>
-            <p>
-              {Articles()[props.currentArticle].body}
-            </p>
+        <Row className='blogBody'>
+          <Col>
+            <span dangerouslySetInnerHTML={{__html: Articles()[props.currentArticle].body}} />
           </Col>
         </Row>
-        {/* scrollTop */}
+        <Row className='text-center my-5'>
+          <Col>
+            <Link onClick={() => scrollToTop()} onMouseEnter={() => setArrow(<img className='img-fluid scrollTop' src='./uparrow.png' />)} onMouseLeave={() => setArrow(<img className='img-fluid scrollTop' src='./uparrowfilled.png' />)}>{arrow}</Link>
+          </Col>
+        </Row>
       </Container>
     </>
   );

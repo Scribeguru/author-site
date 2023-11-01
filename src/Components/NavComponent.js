@@ -89,11 +89,14 @@ c214 435 238 472 300 472 18 0 347 -36 731 -79z m881 -273 c76 -423 196 -1144
     return (
         <>
             <Container fluid>
-                <Row className='pt-4 nav'>
-                    <Col sm='12' lg='6' className='name text-center py-3'>
+                <Row className='pt-4 nav text-center'>
+                    <Col sm='12' lg='4' className='name py-3'>
                         <Link to='/'>MITCHELL L.J. POCO</Link>
                     </Col>
-                    <Col sm='2' className='text-center pb-3'>
+                    <Col sm='2' lg='2' className='py-3'>
+                        <Link to='/books'>Books</Link>
+                    </Col>
+                    <Col sm='2' lg='2' className='pb-3'>
                         <Link to='/rollthedice' onClick={() => diversify()} onMouseEnter={() => (setDice(<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="50.000000pt" height="35.000000pt" viewBox="-5 0 463 335"
                             preserveAspectRatio="xMidYMid meet">
@@ -227,10 +230,10 @@ c214 435 238 472 300 472 18 0 347 -36 731 -79z m881 -273 c76 -423 196 -1144
                             {dice}
                         </Link>
                     </Col>
-                    <Col sm='2' className='text-center py-3'>
+                    <Col sm='2' lg='2' className='py-3'>
                         <Link to='/contact'>Contact</Link>
                     </Col>
-                    <Col sm='2' className='text-center py-3'>
+                    <Col sm='2' lg='2' className='py-3'>
                         <Link to='/about'>About</Link>
                     </Col>
                 </Row >
