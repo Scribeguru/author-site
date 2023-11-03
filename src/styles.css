@@ -27,11 +27,12 @@ body {
   overflow-x: hidden;
   font-family: 'Gilda Display', serif;
   font-size: 1.3em;
-  background-color: rgb(238, 235, 229);
+  line-height: 1.65em;
+  background-color: #fff4f4;
 }
 
 form {
-  background-color: #e1dcd2;
+  background-color: #e1ded7;
   text-align: justify;
   font-family: 'Quicksand';
 }
@@ -50,6 +51,15 @@ h3 {
   font-weight: 400;
 }
 
+::selection {
+  background-color: white;
+  color: #ff0707;
+}
+
+.about {
+  text-align: justify;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -58,7 +68,6 @@ h3 {
 
 .blogBody {
   text-align: justify;
-  line-height: 1.55;
 }
 
 .blurb {
@@ -70,14 +79,14 @@ h3 {
   width: 100%;
 }
 
-
-.bookDesc {
-  text-align: justify;
-  line-height: 1.55;
+.bookImg {
+  max-height: 400px;
+  border: 1px solid rgba(0, 0, 0, .1);
 }
 
-.bookImg {
-  max-height: 365px;
+.booksImg {
+  max-height: 750px;
+  outline: 1px solid rgba(0, 0, 0, .1);
 }
 
 .btn {
@@ -108,6 +117,10 @@ h3 {
   font-size: .5em;
 }
 
+.dice {
+  max-height: 48px;
+}
+
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -127,16 +140,17 @@ h3 {
 
 .foundation {
   border-top: 1px solid black;
-  box-shadow: 0 400px 1000px black;
+  box-shadow: 0 42vh 2.2px rgba(0, 0, 0, .6);
 }
 
+
 .hand {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color: #ff0707
 }
 
 .hook {
   background-color: black;
-  background-size: ;
   color: #eeebe5;
 }
 
@@ -158,7 +172,6 @@ h3 {
 .shortAbout {
   margin: 0 10em 4em;
   text-align: justify;
-  line-height: 1.75;
 }
 
 .social-icon {
@@ -186,6 +199,9 @@ LG>=992px
   .blogBody, .shortAbout {
     margin: 1em 3em 3em;
   }
+  .about {
+    margin: 0 1em 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -203,6 +219,9 @@ LG>=992px
   .blogBody, .shortAbout {
     margin: 1em 9em 3em;
   }
+  .about {
+    margin: 0 2em 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -211,7 +230,10 @@ LG>=992px
   }
 
   .blogBody, .shortAbout {
-    margin: 1em 16em 3em;
+    margin: 1em 15em 3em;
+  }
+  .about {
+    margin: 0 5em 0;
   }
 }
 

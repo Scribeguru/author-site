@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, FormGroup, Input, Label, Button } from 'reactstrap';
 
 export default function Contact() {
 
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        setTimeout(function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 0);
+    }, []);
 
     return (
 

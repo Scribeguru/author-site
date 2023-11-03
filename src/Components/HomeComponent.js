@@ -4,6 +4,18 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
 
+  const [arrow, setArrow] = useState(<img className='img-fluid scrollTop' src='./uparrowfilled.png' />)
+
+  useEffect(() => {
+    setTimeout(function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 0);
+  }, []);
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <>
       <Container className='foundation'>
@@ -16,22 +28,28 @@ export default function Home() {
         </Row>
         <Row className='text-center'>
           <Col xs='12' className='buyLink'>
-            <span className='hand'>☛ </span><Link target='_blank' to='https://google.com' className='available' ><em>Available where you buy books</em></Link><span className='hand'> ☜</span>
+            <span className='hand'>☛ </span><u><Link target='_blank' to='https://google.com' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
           </Col>
           <Col className='mt-1 pt-3 mb-4 book'>
-            <img className='bookImg img-fluid' src='./mockup.jpg' />
+            <img className='bookImg img-fluid' src='./mockup.png' />
           </Col>
         </Row>
         <Row className='blurb text-center py-3 my-4 pb-5'>
           <Col xs='12' className='mb-4'>
-            sdfdsf <em><b>Dancing Through the Labyrinth</b></em> is a fire ass piece,<br /> yadayada.sdsdsdsdsdsds.
+            Minted from the pressure of America's elements, <em><b><u><Link to='/books'>Dancing Through the Labyrinth</Link></u></b></em>
+            <br />masterfully extricates existential gold from the very limits of language.
           </Col>
         </Row>
         <hr />
         <Row>
           <Col className='shortAbout'>
-            <h2 className='my-5 pt-2'><b>Hi, I'm Mitchell.</b></h2>
-            Hello! this part is all about me, but not as much about me as the about page. Maybe I'll put a redirect to the about page here, too! But then that would be a lot of buttons. I'll probably just leave the decision to scroll back up to learn about me in your hands since that way this page will remain uncluttered and you'll be forced to reencounter the buy link if you didn't already use it to get a copy of my kickass book.
+            <h2 className='my-5 pt-2'><b>Hello, I'm Mitchell —</b></h2>
+            and infinitely grateful you've deemed this visit to my website a worthy expenditure of your time.<br /><br />Among the contents here, you can find a number of things I've written, <em><u><Link to='/contact'>the means to get in touch with me</Link></u></em>, and <em><u><Link to='/about'>a more fleshed-out introduction of myself</Link></u></em>.
+          </Col>
+        </Row>
+        <Row className='text-center my-5'>
+          <Col>
+            <Link onClick={() => scrollToTop()} onMouseEnter={() => setArrow(<img className='img-fluid scrollTop' src='./uparrow.png' />)} onMouseLeave={() => setArrow(<img className='img-fluid scrollTop' src='./uparrowfilled.png' />)}>{arrow}</Link>
           </Col>
         </Row>
       </Container >
