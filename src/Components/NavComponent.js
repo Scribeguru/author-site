@@ -20,7 +20,7 @@ export default function Nav(props) {
                         <Link to='/'>MITCHELL L.J. POCO</Link>
                     </Col>
                     <Col sm='2' lg='2' className='py-3'>
-                        <Link to='/books'>Books</Link>
+                        <Link to='/books'>BOOKS</Link>
                     </Col>
                     <Col sm='2' lg='2' className='pb-3'>
                         <Link to='/rollthedice' onClick={() => diversify()} onMouseEnter={() => (setDice(<img className='dice img-fluid' src='./dicered.png' />))} onMouseLeave={() => setDice(<img className='dice img-fluid' src='./dice.png' />)}>
@@ -28,10 +28,10 @@ export default function Nav(props) {
                         </Link>
                     </Col>
                     <Col sm='2' lg='2' className='py-3'>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact'>CONTACT</Link>
                     </Col>
                     <Col sm='2' lg='2' className='py-3'>
-                        <Link to='/about'>About</Link>
+                        <Link to='/about'>ABOUT</Link>
                     </Col>
                 </Row >
             </Container>

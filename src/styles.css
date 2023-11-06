@@ -1,11 +1,16 @@
 @font-face {
-  font-family: 'Quicksand';
-  src: local('Quicksand'), url(./fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+  font-family: 'Quaaykop';
+  src: local('Quaaykop'), url(./fonts/QuaaykopMedium-2OxRW.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Gilda Display';
-  src: local('Gilda Display'), url(./fonts/GildaDisplay-Regular.ttf) format('truetype');
+  font-family: 'Theano Didot';
+  src: local('Theano Didot'), url(./fonts/TheanoDidot-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: local('EB Garamond'), url(./fonts/EBGaramond-VariableFont_wght.ttf) format('truetype');
 }
 
 a {
@@ -17,7 +22,7 @@ a {
 
 a:hover {
   color: inherit;
-  text-decoration-color: rgb(201, 193, 183);
+  text-decoration-color: #ff0707;
 
 }
 
@@ -25,16 +30,16 @@ body {
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Gilda Display', serif;
+  font-family: 'EB Garamond', serif;
   font-size: 1.3em;
   line-height: 1.65em;
   background-color: #fff4f4;
 }
 
 form {
-  background-color: #e1ded7;
+  background-color: #dcd3d3;
   text-align: justify;
-  font-family: 'Quicksand';
+  font-family: 'EB Garamond';
 }
 
 footer {
@@ -44,16 +49,22 @@ footer {
 }
 
 h1 {
+  font-family: 'EB Garamond';
   font-weight: bold;
 }
 
+h2 {
+  font-family: 'EB Garamond';
+}
+
 h3 {
+  font-family: 'EB Garamond';
   font-weight: 400;
 }
 
 ::selection {
-  background-color: white;
-  color: #ff0707;
+  color: white;
+  background-color: #ff0707;
 }
 
 .about {
@@ -90,9 +101,10 @@ h3 {
 }
 
 .btn {
-  font-family: 'Quicksand';
+  font-family: 'EB Garamond';
+  font-size: large;
   color: black;
-  background-color: #eeebe5;
+  background-color: #fff4f4;
   border-radius: 0;
   transition: none;
   outline: none;
@@ -124,7 +136,7 @@ h3 {
 .form-control {
   box-shadow: none;
   border-radius: 0;
-  font-family: 'Gilda-display';
+  font-family: 'EB Garamond';
   font-size: .9em;
 }
 
@@ -140,13 +152,13 @@ h3 {
 
 .foundation {
   border-top: 1px solid black;
-  box-shadow: 0 42vh 2.2px rgba(0, 0, 0, .6);
+  box-shadow: 0 42vh 1px black;
 }
 
 
 .hand {
+  font-family: serif;
   font-size: 1.3em;
-  color: #ff0707
 }
 
 .hook {
@@ -155,13 +167,14 @@ h3 {
 }
 
 .name {
+  font-family: 'Quaaykop';
   white-space: nowrap;
   font-size: 1.1em;
   font-weight: 525;
 }
 
 .nav {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Theano Didot', sans-serif;
 }
 
 .scrollTop {
@@ -244,4 +257,93 @@ LG>=992px
   .blogBody, .shortAbout {
     margin: 0;
   }
+}
+/* ///////////////////////////////////////////////////////3d book jawn/////////////////////////////////////////////////////////////////////// */
+.book-container-654583a8a1213d004a934fc8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 600px;
+}
+
+@keyframes initAnimation-654583a8a1213d004a934fc8 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-35deg);
+  }
+}
+
+.book-container-654583a8a1213d004a934fc8 .book {
+  width: 238px;
+  height: 363px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(-35deg);
+  transition: transform 1s ease;
+  animation: 1s ease 0s 1 initAnimation-654583a8a1213d004a934fc8;
+}
+
+.book-container-654583a8a1213d004a934fc8 .book:hover {
+  transform: rotateY(0deg);
+}
+
+.book-container-654583a8a1213d004a934fc8 .book > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 238px;
+  height: 363px;
+  transform: translateZ(19.5px);
+  background-color: #ffffff;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 5px 5px 20px #a4a7ab;
+  background-color: #ffffff;
+}
+
+.book-container-654583a8a1213d004a934fc8 .book::before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0px;
+  width: 37px;
+  height: 363px;
+  transform: translateX(218.5px) rotateY(90deg);
+  background: linear-gradient(90deg, 
+    #fff 0%,
+    #f9f9f9 5%,
+    #fff 10%,
+    #f9f9f9 15%,
+    #fff 20%,
+    #f9f9f9 25%,
+    #fff 30%,
+    #f9f9f9 35%,
+    #fff 40%,
+    #f9f9f9 45%,
+    #fff 50%,
+    #f9f9f9 55%,
+    #fff 60%,
+    #f9f9f9 65%,
+    #fff 70%,
+    #f9f9f9 75%,
+    #fff 80%,
+    #f9f9f9 85%,
+    #fff 90%,
+    #f9f9f9 95%,
+    #fff 100%
+    );
+}
+
+.book-container-654583a8a1213d004a934fc8 .book::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  width: 238px;
+  height: 363px;
+  transform: translateZ(-19.5px);
+  background-color: #ffffff;
+  border-radius: 0 2px 2px 0;
+  box-shadow: -10px 0 50px 10px #a4a7ab;
 }

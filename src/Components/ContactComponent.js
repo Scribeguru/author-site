@@ -18,7 +18,7 @@ export default function Contact() {
                 <Col>
                     <Form action="https://formsubmit.co/mitchpoco@mitchpo.co" method="POST" className='p-4'>
                         <FormGroup>
-                            <h3>Contact Form</h3>
+                            <h3><b>Contact Form</b></h3>
                         </FormGroup>
                         <Col sm='6'>
                             <FormGroup>
@@ -62,7 +62,7 @@ export default function Contact() {
                         </Col>
                         <Col className='text-center'>
                             <Button onMouseDown={(e) => e.preventDefault()} className='px-4 py-2'>
-                                Send
+                                <b>Send</b>
                             </Button>
                         </Col>
                     </Form>
