@@ -5,7 +5,7 @@ import Articles from './ArticleComponent';
 
 export default function Nav(props) {
 
-    const [dice, setDice] = useState(<img className='dice img-fluid' src='./dice.png' />);
+    const [dice, setDice] = useState(<img className='dice img-fluid' src='./dicepitch.png' />);
 
     function diversify() {
         let x = Math.floor(Math.random() * Articles().length);
@@ -16,21 +16,21 @@ export default function Nav(props) {
         <>
             <Container fluid>
                 <Row className='pt-4 nav text-center'>
-                    <Col sm='12' lg='4' className='name py-3'>
-                        <Link to='/'>MITCHELL L.J. POCO</Link>
+                    <Col xs='12'>
+                        <Link to='/'><img className='img-fluid name' src='./nameT.png' /></Link>
                     </Col>
-                    <Col sm='2' lg='2' className='py-3'>
+                    <Col sm='3' lg='3' className='py-4'>
                         <Link to='/books'>BOOKS</Link>
                     </Col>
-                    <Col sm='2' lg='2' className='pb-3'>
-                        <Link to='/rollthedice' onClick={() => diversify()} onMouseEnter={() => (setDice(<img className='dice img-fluid' src='./dicered.png' />))} onMouseLeave={() => setDice(<img className='dice img-fluid' src='./dice.png' />)}>
+                    <Col sm='3' lg='3' className='pt-2'>
+                        <Link to='/rollthedice' onClick={() => diversify()} onMouseEnter={() => (setDice(<img className='dice img-fluid' src='./dicepitchyellow.png' />))} onMouseLeave={() => setDice(<img className='dice img-fluid' src='./dicepitch.png' />)}>
                             {dice}
                         </Link>
                     </Col>
-                    <Col sm='2' lg='2' className='py-3'>
+                    <Col sm='3' lg='3' className='py-4'>
                         <Link to='/contact'>CONTACT</Link>
                     </Col>
-                    <Col sm='2' lg='2' className='py-3'>
+                    <Col sm='3' lg='3' className='py-4'>
                         <Link to='/about'>ABOUT</Link>
                     </Col>
                 </Row >

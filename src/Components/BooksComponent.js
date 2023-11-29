@@ -20,12 +20,10 @@ export default function Books() {
         <Container className='foundation'>
             <Row className='my-5 text-center'>
                 <Col sm='12' md='6'>
-                    <div class="book-container-654583a8a1213d004a934fc8 my-5 pt-5">
-                        <div class="book">
-                            <img alt="Dancing Through the Labyrinth" src="https://res.cloudinary.com/dwkwbtgqh/image/upload/v1699054722/file_o3sfnw_fmjpd3.png" />
-                        </div>
-                    </div><br />
-                    <span className='hand'>☛ </span><u><Link target='_blank' to='https://google.com' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
+                    <img className='img-fluid' src='./PrintDigital.jpg' />
+                    <br />
+                    <span className='hand'>☛ </span><u><Link target='_blank' to='https://google.com' className='available' ><em>Preorder the ebook!</em></Link></u><span className='hand'> ☜</span>
+                    <br /><br /><em>Paperback, ebook, and audiobook available January 2.</em>
                 </Col>
                 <Col>
                     <h3 className='mt-5 text-center'>

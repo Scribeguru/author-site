@@ -5,21 +5,36 @@ import { Link } from 'react-router-dom';
 export default function Home() {
 
   const [arrow, setArrow] = useState(<img className='img-fluid scrollTop' src='./uparrowfilled.png' />)
+  const [dimensions, setDimensions] = useState({ width: window.innerWidth })
 
   useEffect(() => {
     setTimeout(function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 0);
+    function handleResize() {
+      setDimensions({ width: window.innerWidth })
+    }
+    window.addEventListener('resize', handleResize);
   }, []);
 
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  function moon() {
+    return (dimensions.width <= 576) ? <></> : <img className='moon' src='./moon.png' />;
+  }
+
+  function fool() {
+    return (dimensions.width <= 576) ? <></> : <img className='fool' src='./fool.png' />;
+  }
+
+  //if the window.innerWidth is lesser than 576, hide the element
+
   return (
     <>
       <Container className='foundation'>
-        <Row className='py-5 text-center'>
+        <Row className='py-4 text-center'>
           <Col>
             <h1>
               <span className='hook'>A Striking Exhibition of Contemplative Philosophy</span>.
@@ -27,25 +42,28 @@ export default function Home() {
           </Col>
         </Row>
         <Row className='text-center'>
-          <Col xs='12' className='buyLink mb-5'>
-            <span className='hand'>☛ </span><u><Link target='_blank' to='https://google.com' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
+          <Col xs='hidden' lg='3' className='text-start'>
+            {moon()}
           </Col>
-          <Col className='mt-1 mb-4 book'>
-            {/* <img className='bookImg img-fluid' src='./mockup.png' /> */}
-            <div class="book-container-654583a8a1213d004a934fc8">
-              <div class="book">
-                <img alt="Dancing Through the Labyrinth" src="https://res.cloudinary.com/dwkwbtgqh/image/upload/v1699054722/file_o3sfnw_fmjpd3.png" />
-              </div>
-            </div>
+          <Col className='buyLink my-2'>
+            <span className='hand'>☛ </span><u><Link target='_blank' to='https://google.com' className='available' ><em>Preorder the ebook!</em></Link></u><span className='hand'> ☜</span>
+          </Col>
+          <Col xs='hidden' lg='3' ></Col>
+          <Col xs='12' className='mt-1 mb-4'>
+            <img className='img-fluid book' src='./mockup.jpg' />
           </Col>
         </Row>
-        <Row className='blurb text-center py-3 my-4 pb-5'>
-          <Col xs='12' className='mb-4'>
-            Minted from the pressure of America's elements, <em><b><u><Link to='/books'>Dancing Through the Labyrinth</Link></u></b></em>
+        <Row className='blurb text-center'>
+          <Col xs='hidden' lg='3'></Col>
+          <Col className='mb-4'>
+            Minted from the pressure of America's elements,<br /><em><b><u><Link to='/books'>Dancing Through the Labyrinth</Link></u></b></em>
             <br />masterfully extricates existential gold from the very limits of language.
           </Col>
+          <Col xs='hidden' lg='3' className='text-end'>
+            {fool()}
+          </Col>
         </Row>
-        <hr />
+        <hr className='mt-0' />
         <Row>
           <Col className='shortAbout'>
             <h2 className='my-5 pt-2'><b>Hello, I'm Mitchell </b>—</h2>
