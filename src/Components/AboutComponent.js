@@ -30,7 +30,7 @@ export default function About() {
                     </p>
                 </Col>
                 <Col sm='12' md='6'>
-                    <img className='img-fluid p-4' src='./portrait.jpg' />
+                    <img className='img-fluid p-4' src='./portrait.png' />
                 </Col>
             </Row>
             {/* <hr /> */}
