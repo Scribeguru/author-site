@@ -20,7 +20,7 @@ export default function Footer() {
                         <Link target='_blank' to='https://instagram.com/mljpoco' onMouseEnter={() => setInsta(<img className='img-fluid social-icon' src='./instagram.png' />)} onMouseLeave={() => setInsta(<img className='img-fluid social-icon' src='./instagram1.png' />)}>{insta}</Link>
                     </Col>
                     <Col xs='12' sm='3' className='py-3'>
-                        <Link target='_blank' to='https://tiktok.com/@mljpoco' onMouseEnter={() => setTiktok(<img className='img-fluid social-icon' src='./tiktok.png' />)} onMouseLeave={() => setTiktok(<img className='img-fluid social-icon' src='./tiktok1.png' />)}>{tiktok}</Link>
+                        <Link target='_blank' to='https://tiktok.com/@mitchljpoco' onMouseEnter={() => setTiktok(<img className='img-fluid social-icon' src='./tiktok.png' />)} onMouseLeave={() => setTiktok(<img className='img-fluid social-icon' src='./tiktok1.png' />)}>{tiktok}</Link>
                     </Col>
                     <Col xs='12' sm='3' className='py-3'>
                         <Link target='_blank' to='https://www.youtube.com/@MLJPoco' onMouseEnter={() => setYoutube(<img className='img-fluid social-icon' src='./youtube.png' />)} onMouseLeave={() => setYoutube(<img className='img-fluid social-icon' src='./youtube1.png' />)}>{youtube}</Link>
