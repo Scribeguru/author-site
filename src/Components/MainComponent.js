@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Row, Col, Image, Collapse, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import React, { useState } from 'react';
 import Nav from './NavComponent'
 import Home from './HomeComponent';
 import About from './AboutComponent';

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Row, Col, Image, Collapse, Form, FormGroup, Label, Input, Button, Container } from 'reactstrap';
+import React, { useState } from 'react';
+import { Row, Col, Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Articles from './ArticleComponent';
 
@@ -9,7 +9,7 @@ export default function Nav(props) {
 
     function diversify() {
         let x = Math.floor(Math.random() * Articles().length);
-        (props.currentArticle == x) ? diversify() : props.setCurrentArticle(x);
+        (props.currentArticle === x) ? diversify() : props.setCurrentArticle(x);
     }
 
     return (
