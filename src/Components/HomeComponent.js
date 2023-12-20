@@ -45,8 +45,8 @@ export default function Home() {
           <Col xs='hidden' lg='3' className='text-start'>
             {moon()}
           </Col>
-          <Col className='buyLink my-2'>
-            <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/49tsXSB' className='available' ><em>Pre-order the ebook!</em></Link></u><span className='hand'> ☜</span>
+          <Col className='my-2'>
+            <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/49tsXSB' className='available' ><em>Ebook and Audiobook pre-order open now!</em></Link></u><span className='hand'> ☜</span>
           </Col>
           <Col xs='hidden' lg='3' ></Col>
           <Col xs='12' className='mt-1 mb-4'>
