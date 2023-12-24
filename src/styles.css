@@ -26,6 +26,11 @@ a:hover {
 
 }
 
+audio {
+  border: 10px solid #f5cf78;
+  border-radius: 50px 0 50px 50px;
+}
+
 body {
   max-width: 100%;
   height: 100%;
@@ -206,9 +211,11 @@ LG>=992px
     margin: 2em 1em 2em
   }
 
-  .blogBody, .shortAbout {
+  .blogBody,
+  .shortAbout {
     margin: 1em 3em 3em;
   }
+
   .about {
     margin: 0 1em 0;
   }
@@ -219,16 +226,19 @@ LG>=992px
     margin: 2em 3em 2em
   }
 
-  .blogBody, .shortAbout {
+  .blogBody,
+  .shortAbout {
     margin: 1em 6.5em 2em;
   }
 }
 
 @media only screen and (min-width: 992px) {
 
-  .blogBody, .shortAbout {
+  .blogBody,
+  .shortAbout {
     margin: 1em 9em 3em;
   }
+
   .about {
     margin: 0 2em 0;
   }
@@ -239,9 +249,11 @@ LG>=992px
     margin: 2em 7em 2em
   }
 
-  .blogBody, .shortAbout {
+  .blogBody,
+  .shortAbout {
     margin: 1em 15em 3em;
   }
+
   .about {
     margin: 0 5em 0;
   }
@@ -251,7 +263,9 @@ LG>=992px
   .available {
     font-size: .8em;
   }
-  .blogBody, .shortAbout {
+
+  .blogBody,
+  .shortAbout {
     margin: 0;
   }
 }

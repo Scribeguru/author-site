@@ -23,7 +23,14 @@ export default function Books() {
                     <Link target='_blank' to='https://a.co/d/49tsXSB'><img className='img-fluid' src='./PrintDigital.png' /></Link>
                     <br />
                     <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/49tsXSB' className='available' ><em>Ebook and Audiobook pre-order open now!</em></Link></u><span className='hand'> ☜</span>
-                    <br /><br /><em>Paperback, ebook, and audiobook available January 2.</em>
+                    <br />
+                    <br />
+                    <em>Paperback, ebook, and audiobook available January 2.</em>
+                    <br />
+                    <br />
+                    Retail Audio Sample
+                    <br />
+                    <audio controls src='./audio-sample.mp3' />
                 </Col>
                 <Col>
                     <h3 className='mt-5 text-center'>
