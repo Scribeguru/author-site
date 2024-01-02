@@ -20,12 +20,9 @@ export default function Books() {
         <Container className='foundation'>
             <Row className='my-5 text-center'>
                 <Col sm='12' md='6'>
-                    <Link target='_blank' to='https://a.co/d/49tsXSB'><img className='img-fluid' src='./PrintDigital.png' /></Link>
+                    <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid' src='./PrintDigital.png' /></Link>
                     <br />
-                    <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/49tsXSB' className='available' ><em>Ebook and Audiobook pre-order open now!</em></Link></u><span className='hand'> ☜</span>
-                    <br />
-                    <br />
-                    <em>Paperback, ebook, and audiobook available January 2.</em>
+                    <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/ePi6fgl' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
                     <br />
                     <br />
                     Retail Audio Sample

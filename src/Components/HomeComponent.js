@@ -46,11 +46,11 @@ export default function Home() {
             {moon()}
           </Col>
           <Col className='my-2'>
-            <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/49tsXSB' className='available' ><em>Ebook and Audiobook pre-order open now!</em></Link></u><span className='hand'> ☜</span>
+            <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/ePi6fgl' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
           </Col>
           <Col xs='hidden' lg='3' ></Col>
           <Col xs='12' className='mt-1 mb-4'>
-          <Link target='_blank' to='https://a.co/d/49tsXSB'><img className='img-fluid book' src='./mockup.png' /></Link>
+          <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid book' src='./mockup.png' /></Link>
           </Col>
         </Row>
         <Row className='blurb text-center'>
