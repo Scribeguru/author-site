@@ -8,8 +8,8 @@ export default function Nav(props) {
     const [dice, setDice] = useState(<img className='dice img-fluid' src='./dicepitch.png' />);
 
     function diversify() {
-        let x = Math.floor(Math.random() * Articles().length);
-        (props.currentArticle === x) ? diversify() : props.setCurrentArticle(x);
+        let index = Math.floor(Math.random() * Articles().length);
+        (props.currentArticle === index) ? diversify() : props.setCurrentArticle(index);
     }
 
     return (
