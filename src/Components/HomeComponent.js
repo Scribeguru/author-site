@@ -50,7 +50,7 @@ export default function Home() {
           </Col>
           <Col xs='hidden' lg='3' ></Col>
           <Col xs='12' className='mt-1 mb-4'>
-          <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid book' src='./mockup.png' /></Link>
+          <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid book' src='./mockup.webp' /></Link>
           </Col>
         </Row>
         <Row className='blurb text-center'>

@@ -20,7 +20,7 @@ export default function Books() {
         <Container className='foundation'>
             <Row className='my-5 text-center'>
                 <Col sm='12' md='6'>
-                    <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid' src='./PrintDigital.png' /></Link>
+                    <Link target='_blank' to='https://a.co/d/ePi6fgl'><img className='img-fluid' src='./PrintDigital.webp' /></Link>
                     <br />
                     <span className='hand'>☛ </span><u><Link target='_blank' to='https://a.co/d/ePi6fgl' className='available' ><em>Available where you buy books</em></Link></u><span className='hand'> ☜</span>
                     <br />
